@@ -502,7 +502,7 @@
 <p>Returns zeros for pinned particles.</p>
 <p>If a particle is not given, a random one is picked through <a href="../basic/high_level/#DynamicalBilliards.randominside"><code>randominside</code></a>. See <a href="../basic/high_level/#DynamicalBilliards.parallelize"><code>parallelize</code></a> for a parallelized version.</p>
 <p>[1] : Ch. Dellago <em>et al</em>, <a href="http://link.aps.org/doi/10.1103/PhysRevE.53.1485">Phys. Rev. E <strong>53</strong> (1996)</a></p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/9a1cb9008bd47d8d5d6145235ebad7f71d0ce995/src/lyapunov_spectrum.jl#L274-L285' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/cf1600459801fdfdbe5ab880d8f78f8924c9a5e6/src/lyapunov_spectrum.jl#L274-L285' class='documenter-source'>source</a><br></p>
 <p>Here its basic use is illustrated</p>
 <div class="codehilite"><pre><span></span><span class="k">using</span> <span class="n">DynamicalBilliards</span>
 
@@ -519,10 +519,10 @@
 
 
 <div class="codehilite"><pre><span></span>4-element Array{Float64,1}:
-  0.6476348146961204
-  0.0016956594002548939
- -1.7105526619808314e-5
- -0.6493133685697554
+  0.6067328368251038
+  9.040959407375297e-7
+ -0.00315743216774685
+ -0.6035763087532982
 </pre></div>
 
 
@@ -581,7 +581,7 @@
 
 
 <p>[1] : Ch. Dellago <em>et al</em>, <a href="http://link.aps.org/doi/10.1103/PhysRevE.53.1485">Phys. Rev. E <strong>53</strong> (1996)</a></p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/9a1cb9008bd47d8d5d6145235ebad7f71d0ce995/src/lyapunov_spectrum.jl#L350-L381' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/cf1600459801fdfdbe5ab880d8f78f8924c9a5e6/src/lyapunov_spectrum.jl#L350-L381' class='documenter-source'>source</a><br></p>
 <hr />
 <p>For example, lets plot the evolution of the perturbation growth using different colors for collisions with walls and disks in the Sinai billiard:</p>
 <div class="codehilite"><pre><span></span><span class="k">using</span> <span class="n">DynamicalBilliards</span><span class="p">,</span> <span class="n">PyPlot</span><span class="p">,</span> <span class="n">LinearAlgebra</span>
