@@ -502,7 +502,7 @@
 <p>Returns zeros for pinned particles.</p>
 <p>If a particle is not given, a random one is picked through <a href="../basic/high_level/#DynamicalBilliards.randominside"><code>randominside</code></a>. See <a href="../basic/high_level/#DynamicalBilliards.parallelize"><code>parallelize</code></a> for a parallelized version.</p>
 <p>[1] : Ch. Dellago <em>et al</em>, <a href="http://link.aps.org/doi/10.1103/PhysRevE.53.1485">Phys. Rev. E <strong>53</strong> (1996)</a></p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/f83cfc3659b8e3f8029cd9dd8b04b2a698fbf7c9/src/lyapunov_spectrum.jl#L274-L285' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/9a1cb9008bd47d8d5d6145235ebad7f71d0ce995/src/lyapunov_spectrum.jl#L274-L285' class='documenter-source'>source</a><br></p>
 <p>Here its basic use is illustrated</p>
 <div class="codehilite"><pre><span></span><span class="k">using</span> <span class="n">DynamicalBilliards</span>
 
@@ -519,10 +519,10 @@
 
 
 <div class="codehilite"><pre><span></span>4-element Array{Float64,1}:
-  0.6047769534692808
-  0.0018949116964029494
- -1.130950054785478e-5
- -0.6066605556651361
+  0.6625284652868285
+  0.00014513932884312606
+ -0.0006885172287560709
+ -0.6619850873869153
 </pre></div>
 
 
@@ -563,7 +563,7 @@
 <p>Calculate the evolution of the perturbation vector <code>Δ</code> along the trajectory of <code>p</code> in <code>bd</code> for total time <code>t</code>. <code>Δ</code> is initialised as <code>[1,1,1,1]</code>.</p>
 <p>If a particle is not given, a random one is picked through <a href="../basic/high_level/#DynamicalBilliards.randominside"><code>randominside</code></a>. Returns empty lists for pinned particles.</p>
 <p><strong>Description</strong></p>
-<p>This function <em>safely</em> computes the time evolution of a pertubation vector using the linearized dynamics of the system, as outlined by [1]. Because the dynamics are linear, we can safely re-normalize the pertubation vector after every collision (otherwise the pertubations grow to infinity).</p>
+<p>This function <em>safely</em> computes the time evolution of a perturbation vector using the linearized dynamics of the system, as outlined by [1]. Because the dynamics are linear, we can safely re-normalize the perturbation vector after every collision (otherwise the perturbations grow to infinity).</p>
 <p>Immediately before <em>and after</em> every collison, this function computes</p>
 <ul>
 <li>the current time.</li>
@@ -571,7 +571,7 @@
 <li>the obstacle index of the current obstacle</li>
 </ul>
 <p>and returns these in three vectors <code>ts, Rs, is</code>.</p>
-<p>To obtain the <em>actual</em> evolution of the pertubation vector you can use the function <code>pertubationevolution(Rs)</code> which simply does</p>
+<p>To obtain the <em>actual</em> evolution of the perturbation vector you can use the function <code>perturbationevolution(Rs)</code> which simply does</p>
 <div class="codehilite"><pre><span></span><span class="n">Δ</span> <span class="o">=</span> <span class="kt">Vector</span><span class="p">{</span><span class="n">SVector</span><span class="p">{</span><span class="mi">4</span><span class="p">,</span><span class="kt">Float64</span><span class="p">}}(</span><span class="n">undef</span><span class="p">,</span> <span class="n">length</span><span class="p">(</span><span class="n">R</span><span class="p">))</span>
 <span class="n">Δ</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">R</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 <span class="k">for</span> <span class="n">i</span> <span class="kp">in</span> <span class="mi">2</span><span class="o">:</span><span class="n">length</span><span class="p">(</span><span class="n">R</span><span class="p">)</span>
@@ -581,14 +581,14 @@
 
 
 <p>[1] : Ch. Dellago <em>et al</em>, <a href="http://link.aps.org/doi/10.1103/PhysRevE.53.1485">Phys. Rev. E <strong>53</strong> (1996)</a></p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/f83cfc3659b8e3f8029cd9dd8b04b2a698fbf7c9/src/lyapunov_spectrum.jl#L350-L381' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/9a1cb9008bd47d8d5d6145235ebad7f71d0ce995/src/lyapunov_spectrum.jl#L350-L381' class='documenter-source'>source</a><br></p>
 <hr />
 <p>For example, lets plot the evolution of the perturbation growth using different colors for collisions with walls and disks in the Sinai billiard:</p>
 <div class="codehilite"><pre><span></span><span class="k">using</span> <span class="n">DynamicalBilliards</span><span class="p">,</span> <span class="n">PyPlot</span><span class="p">,</span> <span class="n">LinearAlgebra</span>
 <span class="n">bd</span> <span class="o">=</span> <span class="n">billiard_sinai</span><span class="p">()</span>
 
 <span class="n">ts</span><span class="p">,</span> <span class="n">Rs</span><span class="p">,</span> <span class="n">is</span> <span class="o">=</span> <span class="n">perturbationgrowth</span><span class="p">(</span><span class="n">Particle</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">),</span> <span class="n">bd</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">)</span>
-<span class="n">Δ</span> <span class="o">=</span> <span class="n">pertubationevolution</span><span class="p">(</span><span class="n">Rs</span><span class="p">)</span>
+<span class="n">Δ</span> <span class="o">=</span> <span class="n">perturbationevolution</span><span class="p">(</span><span class="n">Rs</span><span class="p">)</span>
 
 <span class="n">figure</span><span class="p">()</span>
 <span class="n">plot</span><span class="p">(</span><span class="n">ts</span><span class="p">,</span> <span class="n">log</span><span class="o">.</span><span class="p">(</span><span class="n">norm</span><span class="o">.</span><span class="p">(</span><span class="n">Δ</span><span class="p">)),</span> <span class="s">&quot;k-&quot;</span><span class="p">,</span> <span class="n">lw</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">)</span>
