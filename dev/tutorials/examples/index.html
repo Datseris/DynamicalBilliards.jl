@@ -60,8 +60,8 @@
     
       <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
-        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700|Source+Code+Pro">
+        <style>body,input{font-family:"Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Source Code Pro","Courier New",Courier,monospace}</style>
       
     
     <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
@@ -586,7 +586,7 @@
 </pre></div>
 
 
-<video width="100%" height="auto" controls> <source src="https://raw.githubusercontent.com/JuliaDynamics/JuliaDynamicsDocumentation.jl/master/animations/billiards/DynamicalBilliards_v3.mp4?raw=true" type="video/mp4"> </video>
+<video width="100%" height="auto" controls> <source src="https://raw.githubusercontent.com/JuliaDynamics/JuliaDynamics/master/videos/billiards/DynamicalBilliards_v3.mp4?raw=true" type="video/mp4"> </video>
 
 <p><a id='Mean-Free-Path-of-the-Lorentz-Gas-1'></a></p>
 <h2 id="mean-free-path-of-the-lorentz-gas">Mean Free Path of the Lorentz Gas</h2>
@@ -596,7 +596,7 @@
 </pre></div>
 
 
-<div class="codehilite"><pre><span></span>2.1863665047608456
+<div class="codehilite"><pre><span></span>2.1771077185044825
 </pre></div>
 
 
@@ -605,7 +605,7 @@
 <p>which you can find for example <a href="http://www.cmls.polytechnique.fr/perso/golse/Surveys/FGIcmp03.pdf">here</a>.</p>
 <p><a id='Semi-Periodic-Billiard-1'></a></p>
 <h2 id="semi-periodic-billiard">Semi-Periodic Billiard</h2>
-<p><code>DynamicalBilliards.jl</code> allows for your system to be periodic in only some specific directions. For example, the following code produces a billiard that is periodic in only the x-direction:</p>
+<p><code>DynamicalBilliards</code> allows for your system to be periodic in only some specific directions. For example, the following code produces a billiard that is periodic in only the x-direction:</p>
 <div class="codehilite"><pre><span></span><span class="k">using</span> <span class="n">DynamicalBilliards</span><span class="p">,</span> <span class="n">PyPlot</span>
 <span class="n">o</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">;</span> <span class="n">x</span> <span class="o">=</span> <span class="mf">2.0</span><span class="p">;</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.0</span>
 
