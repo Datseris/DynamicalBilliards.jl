@@ -644,7 +644,7 @@
 
 <p>Return minimum <code>distance(p, obst)</code> for all <code>obst</code> in <code>bd</code>. If the <code>distance(p, bd)</code> is negative this means that the particle is outside the billiard.</p>
 <p>All <code>distance</code> functions can also be given a position (vector) instead of a particle.</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/1eb31ea32557b8a3d2afba9005758b5662ac36d6/src/billiards/obstacles.jl#L415-L428' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/973fa1a019b773f952dba5ff52112a00adf8d5d4/src/billiards/obstacles.jl#L415-L428' class='documenter-source'>source</a><br></p>
 <p>Notice that for very small negative values of distance, <a href="./#DynamicalBilliards.collision"><code>collision</code></a> takes care of finite precision issues and does not return wrong collisions.</p>
 <p><a id='Numerical-Precision-1'></a></p>
 <h2 id="numerical-precision">Numerical Precision</h2>
@@ -676,7 +676,7 @@
 <p>Find the collision (if any) between given particle and obstacle. Return the time until collision and the estimated collision point <code>cp</code>.</p>
 <p>Returns <code>Inf, SV(0, 0)</code> if the collision is not possible <em>or</em> if the collision happens backwards in time.</p>
 <p><strong>It is the duty of <code>collision</code> to avoid incorrect collisions when the particle is on top of the obstacle (or very close).</strong></p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/1eb31ea32557b8a3d2afba9005758b5662ac36d6/src/timeevolution/collisions.jl#L21-L31' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/973fa1a019b773f952dba5ff52112a00adf8d5d4/src/timeevolution/collisions.jl#L21-L31' class='documenter-source'>source</a><br></p>
 <p><a id='DynamicalBilliards.next_collision' href='#DynamicalBilliards.next_collision'>#</a>
 <strong><code>DynamicalBilliards.next_collision</code></strong> &mdash; <em>Function</em>.</p>
 <div class="codehilite"><pre><span></span>next_collision(p::AbstractParticle, bd::Billiard) -&gt; i, tmin, cp
@@ -684,7 +684,7 @@
 
 
 <p>Compute the <a href="./#DynamicalBilliards.collision"><code>collision</code></a> across all obstacles in <code>bd</code> and find the minimum one. Return the index of colliding obstacle, the time and the collision point.</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/1eb31ea32557b8a3d2afba9005758b5662ac36d6/src/timeevolution/collisions.jl#L330-L334' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/973fa1a019b773f952dba5ff52112a00adf8d5d4/src/timeevolution/collisions.jl#L330-L334' class='documenter-source'>source</a><br></p>
 <p><a id='Non-Exported-Internals-1'></a></p>
 <h2 id="non-exported-internals">Non-Exported Internals</h2>
 <p><a id='Obstacle-related-1'></a></p>
@@ -696,7 +696,7 @@
 
 
 <p>Return the vector normal to the obstacle's boundary at the given position (which is assumed to be very close to the obstacle's boundary).</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/1eb31ea32557b8a3d2afba9005758b5662ac36d6/src/billiards/obstacles.jl#L381-L385' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/973fa1a019b773f952dba5ff52112a00adf8d5d4/src/billiards/obstacles.jl#L381-L385' class='documenter-source'>source</a><br></p>
 <p><a id='DynamicalBilliards.cellsize' href='#DynamicalBilliards.cellsize'>#</a>
 <strong><code>DynamicalBilliards.cellsize</code></strong> &mdash; <em>Function</em>.</p>
 <div class="codehilite"><pre><span></span>cellsize(bd)
@@ -705,7 +705,7 @@
 
 <p>Return the delimiters <code>xmin, ymin, xmax, ymax</code> of the given obstacle/billiard.</p>
 <p>Used in <code>randominside()</code>, error checking and plotting.</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/1eb31ea32557b8a3d2afba9005758b5662ac36d6/src/billiards/obstacles.jl#L495-L500' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/973fa1a019b773f952dba5ff52112a00adf8d5d4/src/billiards/obstacles.jl#L495-L500' class='documenter-source'>source</a><br></p>
 <p><a id='Propagation-1'></a></p>
 <h3 id="propagation">Propagation</h3>
 <p><a id='DynamicalBilliards.propagate!' href='#DynamicalBilliards.propagate!'>#</a>
@@ -720,7 +720,7 @@
 
 
 <p>Do the same, but take advantage of the already calculated <code>position</code> that the particle should end up at.</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/1eb31ea32557b8a3d2afba9005758b5662ac36d6/src/timeevolution/propagation.jl#L66-L74' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/973fa1a019b773f952dba5ff52112a00adf8d5d4/src/timeevolution/propagation.jl#L66-L74' class='documenter-source'>source</a><br></p>
 <p><a id='DynamicalBilliards.resolvecollision!' href='#DynamicalBilliards.resolvecollision!'>#</a>
 <strong><code>DynamicalBilliards.resolvecollision!</code></strong> &mdash; <em>Function</em>.</p>
 <div class="codehilite"><pre><span></span>resolvecollision!(p::AbstractParticle, o::Obstacle)
@@ -733,7 +733,7 @@
 
 
 <p>This is the ray-splitting implementation. The three functions given are drawn from the ray-splitting dictionary that is passed directly to <code>evolve!()</code>. For a calculated incidence angle φ, if T(φ) &gt; rand(), ray-splitting occurs.</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/1eb31ea32557b8a3d2afba9005758b5662ac36d6/src/timeevolution/propagation.jl#L143-L152' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/973fa1a019b773f952dba5ff52112a00adf8d5d4/src/timeevolution/propagation.jl#L143-L152' class='documenter-source'>source</a><br></p>
 <p><a id='DynamicalBilliards.relocate!' href='#DynamicalBilliards.relocate!'>#</a>
 <strong><code>DynamicalBilliards.relocate!</code></strong> &mdash; <em>Function</em>.</p>
 <div class="codehilite"><pre><span></span>relocate!(p::AbstractParticle, o::Obstacle, t, cp)
@@ -741,7 +741,7 @@
 
 
 <p>Propagate the particle to <code>cp</code> and propagate velocities for time <code>t</code>. Check if it is on the correct side of the obstacle. If not, change the particle position by <a href="./#DynamicalBilliards.distance"><code>distance</code></a> along the <a href="./#DynamicalBilliards.normalvec"><code>normalvec</code></a> of the obstacle.</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/1eb31ea32557b8a3d2afba9005758b5662ac36d6/src/timeevolution/propagation.jl#L40-L46' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/973fa1a019b773f952dba5ff52112a00adf8d5d4/src/timeevolution/propagation.jl#L40-L46' class='documenter-source'>source</a><br></p>
 <p><a id='DynamicalBilliards.specular!' href='#DynamicalBilliards.specular!'>#</a>
 <strong><code>DynamicalBilliards.specular!</code></strong> &mdash; <em>Function</em>.</p>
 <div class="codehilite"><pre><span></span>specular!(p::AbstractParticle, o::Obstacle)
@@ -750,7 +750,7 @@
 
 <p>Perform specular reflection based on the normal vector of the Obstacle.</p>
 <p>In the case where the given obstacle is a <code>RandomObstacle</code>, the specular reflection randomizes the velocity instead (within -π/2+ε to π/2-ε of the normal vector).</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/1eb31ea32557b8a3d2afba9005758b5662ac36d6/src/timeevolution/propagation.jl#L100-L106' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/973fa1a019b773f952dba5ff52112a00adf8d5d4/src/timeevolution/propagation.jl#L100-L106' class='documenter-source'>source</a><br></p>
 <p><a id='DynamicalBilliards.periodicity!' href='#DynamicalBilliards.periodicity!'>#</a>
 <strong><code>DynamicalBilliards.periodicity!</code></strong> &mdash; <em>Function</em>.</p>
 <div class="codehilite"><pre><span></span>periodicity!(p::AbstractParticle, w::PeriodicWall)
@@ -758,7 +758,7 @@
 
 
 <p>Perform periodicity conditions of <code>w</code> on <code>p</code>.</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/1eb31ea32557b8a3d2afba9005758b5662ac36d6/src/timeevolution/propagation.jl#L127-L130' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/973fa1a019b773f952dba5ff52112a00adf8d5d4/src/timeevolution/propagation.jl#L127-L130' class='documenter-source'>source</a><br></p>
 <div class="admonition warning">
 <p class="admonition-title">Cyclotron center is a field of <code>MagneticParticle</code></p>
 <p>For almost all operations involving a <code>MagneticParticle</code>, the center of the cyclotron is required. In order to compute this center only when it physically changes, we have made it a field of the <code>struct</code>.</p>

@@ -555,7 +555,7 @@
 <li>the arc length measured counterclockwise from the open face in <code>Semicircle</code>s</li>
 <li>the arc length measured counterclockwise from the rightmost point in <code>Circular</code>s</li>
 </ul>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/1eb31ea32557b8a3d2afba9005758b5662ac36d6/src/billiards/billiardtable.jl#L29-L42' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/973fa1a019b773f952dba5ff52112a00adf8d5d4/src/billiards/billiardtable.jl#L29-L42' class='documenter-source'>source</a><br></p>
 <hr />
 <p>A <code>Billiard</code> is a wrapper of a <code>Tuple</code> of <code>Obstacle</code>s. The abstract Type <code>Obstacle{T}</code> is the supertype of all objects that a particle may collide with, with global billiard precision of type <code>T</code>.</p>
 <p>There are many premade functions that construct well-known billiards, like the periodic Sinai billiard. You can find all of them at the <a href="../../basic/high_level/#standard-billiards-library">Standard Billiards Library</a>.</p>
@@ -668,7 +668,7 @@
 
 
 <p>Obstacle supertype.</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/1eb31ea32557b8a3d2afba9005758b5662ac36d6/src/billiards/obstacles.jl#L10-L13' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/973fa1a019b773f952dba5ff52112a00adf8d5d4/src/billiards/obstacles.jl#L10-L13' class='documenter-source'>source</a><br></p>
 <p><a id='DynamicalBilliards.Disk' href='#DynamicalBilliards.Disk'>#</a>
 <strong><code>DynamicalBilliards.Disk</code></strong> &mdash; <em>Type</em>.</p>
 <div class="codehilite"><pre><span></span>Disk{T&lt;:AbstractFloat}  &lt;: Circular{T}
@@ -682,7 +682,7 @@
 <li><code>r::T</code> : Radius.</li>
 <li><code>name::String</code> : Some name given for user convenience. Defaults to "Disk".</li>
 </ul>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/1eb31ea32557b8a3d2afba9005758b5662ac36d6/src/billiards/obstacles.jl#L24-L31' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/973fa1a019b773f952dba5ff52112a00adf8d5d4/src/billiards/obstacles.jl#L24-L31' class='documenter-source'>source</a><br></p>
 <p><a id='DynamicalBilliards.RandomDisk' href='#DynamicalBilliards.RandomDisk'>#</a>
 <strong><code>DynamicalBilliards.RandomDisk</code></strong> &mdash; <em>Type</em>.</p>
 <div class="codehilite"><pre><span></span>RandomDisk{T&lt;:AbstractFloat} &lt;: Circular{T}
@@ -696,7 +696,7 @@
 <li><code>r::T</code> : Radius.</li>
 <li><code>name::String</code> : Some name given for user convenience. Defaults to "Random disk".</li>
 </ul>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/1eb31ea32557b8a3d2afba9005758b5662ac36d6/src/billiards/obstacles.jl#L44-L52' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/973fa1a019b773f952dba5ff52112a00adf8d5d4/src/billiards/obstacles.jl#L44-L52' class='documenter-source'>source</a><br></p>
 <p><a id='DynamicalBilliards.Antidot' href='#DynamicalBilliards.Antidot'>#</a>
 <strong><code>DynamicalBilliards.Antidot</code></strong> &mdash; <em>Type</em>.</p>
 <div class="codehilite"><pre><span></span>Antidot{T&lt;:AbstractFloat} &lt;: Circular{T}
@@ -711,7 +711,7 @@
 <li><code>pflag::Bool</code> : Flag that keeps track of where the particle is currently propagating (<code>pflag</code> = propagation-flag). <code>true</code> stands for <em>outside</em> the disk, <code>false</code> for <em>inside</em> the disk. Defaults to <code>true</code>.</li>
 <li><code>name::String</code> : Name of the obstacle given for user convenience. Defaults to "Antidot".</li>
 </ul>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/1eb31ea32557b8a3d2afba9005758b5662ac36d6/src/billiards/obstacles.jl#L65-L78' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/973fa1a019b773f952dba5ff52112a00adf8d5d4/src/billiards/obstacles.jl#L65-L78' class='documenter-source'>source</a><br></p>
 <p><a id='DynamicalBilliards.Semicircle' href='#DynamicalBilliards.Semicircle'>#</a>
 <strong><code>DynamicalBilliards.Semicircle</code></strong> &mdash; <em>Type</em>.</p>
 <div class="codehilite"><pre><span></span>Semicircle{T&lt;:AbstractFloat} &lt;: Circular{T}
@@ -726,7 +726,7 @@
 <li><code>facedir::SVector{2,T}</code> : Direction where the open face of the Semicircle is facing.</li>
 <li><code>name::String</code> : Name of the obstacle given for user convenience. Defaults to "Semicircle".</li>
 </ul>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/1eb31ea32557b8a3d2afba9005758b5662ac36d6/src/billiards/obstacles.jl#L93-L103' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/973fa1a019b773f952dba5ff52112a00adf8d5d4/src/billiards/obstacles.jl#L93-L103' class='documenter-source'>source</a><br></p>
 <p><a id='DynamicalBilliards.InfiniteWall' href='#DynamicalBilliards.InfiniteWall'>#</a>
 <strong><code>DynamicalBilliards.InfiniteWall</code></strong> &mdash; <em>Type</em>.</p>
 <div class="codehilite"><pre><span></span>InfiniteWall{T&lt;:AbstractFloat} &lt;: Wall{T}
@@ -741,7 +741,7 @@
 <li><code>normal::SVector{2,T}</code> : Normal vector to the wall, pointing to where the particle <em>will come from before a collision</em> (pointing towards the inside of the billiard). The size of the vector is irrelevant since it is internally normalized.</li>
 <li><code>name::String</code> : Name of the obstacle, given for user convenience. Defaults to "Wall".</li>
 </ul>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/1eb31ea32557b8a3d2afba9005758b5662ac36d6/src/billiards/obstacles.jl#L134-L147' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/973fa1a019b773f952dba5ff52112a00adf8d5d4/src/billiards/obstacles.jl#L134-L147' class='documenter-source'>source</a><br></p>
 <p><a id='DynamicalBilliards.RandomWall' href='#DynamicalBilliards.RandomWall'>#</a>
 <strong><code>DynamicalBilliards.RandomWall</code></strong> &mdash; <em>Type</em>.</p>
 <div class="codehilite"><pre><span></span>RandomWall{T&lt;:AbstractFloat} &lt;: Wall{T}
@@ -756,7 +756,7 @@
 <li><code>normal::SVector{2,T}</code> : Normal vector to the wall, pointing to where the particle <em>is expected to come from</em> (pointing towards the inside of the billiard).</li>
 <li><code>name::String</code> : Name of the obstacle, given for user convenience. Defaults to "Random wall".</li>
 </ul>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/1eb31ea32557b8a3d2afba9005758b5662ac36d6/src/billiards/obstacles.jl#L213-L224' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/973fa1a019b773f952dba5ff52112a00adf8d5d4/src/billiards/obstacles.jl#L213-L224' class='documenter-source'>source</a><br></p>
 <p><a id='DynamicalBilliards.PeriodicWall' href='#DynamicalBilliards.PeriodicWall'>#</a>
 <strong><code>DynamicalBilliards.PeriodicWall</code></strong> &mdash; <em>Type</em>.</p>
 <div class="codehilite"><pre><span></span>PeriodicWall{T&lt;:AbstractFloat} &lt;: Wall{T}
@@ -771,7 +771,7 @@
 <li><code>normal::SVector{2,T}</code> : Normal vector to the wall, pointing to where the particle <em>will come from</em> (to the inside the billiard). The size of the vector is <strong>important</strong>! This vector is added to a particle's <code>pos</code> during collision. Therefore the size of the normal vector must be correctly associated with the size of the periodic cell.</li>
 <li><code>name::String</code> : Name of the obstacle, given for user convenience. Defaults to "Periodic wall".</li>
 </ul>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/1eb31ea32557b8a3d2afba9005758b5662ac36d6/src/billiards/obstacles.jl#L242-L256' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/973fa1a019b773f952dba5ff52112a00adf8d5d4/src/billiards/obstacles.jl#L242-L256' class='documenter-source'>source</a><br></p>
 <p><a id='DynamicalBilliards.SplitterWall' href='#DynamicalBilliards.SplitterWall'>#</a>
 <strong><code>DynamicalBilliards.SplitterWall</code></strong> &mdash; <em>Type</em>.</p>
 <div class="codehilite"><pre><span></span>SplitterWall{T&lt;:AbstractFloat} &lt;: Wall{T}
@@ -787,7 +787,7 @@
 <li><code>pflag::Bool</code> : Flag that keeps track of where the particle is currently propagating (<code>pflag</code> = propagation flag). <code>true</code> is associated with the <code>normal</code> vector the wall is instantiated with. Defaults to <code>true</code>.</li>
 <li><code>name::String</code> : Name of the obstacle, given for user convenience. Defaults to "Splitter wall".</li>
 </ul>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/1eb31ea32557b8a3d2afba9005758b5662ac36d6/src/billiards/obstacles.jl#L274-L289' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/973fa1a019b773f952dba5ff52112a00adf8d5d4/src/billiards/obstacles.jl#L274-L289' class='documenter-source'>source</a><br></p>
 <p><a id='DynamicalBilliards.FiniteWall' href='#DynamicalBilliards.FiniteWall'>#</a>
 <strong><code>DynamicalBilliards.FiniteWall</code></strong> &mdash; <em>Type</em>.</p>
 <div class="codehilite"><pre><span></span>FiniteWall{T&lt;:AbstractFloat} &lt;: Wall{T}
@@ -804,7 +804,7 @@
 <li><code>isdoor::Bool</code> : Flag of whether this <code>FiniteWall</code> instance is a "Door".</li>
 <li><code>name::String</code> : Name of the obstacle, given for user convenience. Defaults to "Finite Wall".</li>
 </ul>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/1eb31ea32557b8a3d2afba9005758b5662ac36d6/src/billiards/obstacles.jl#L166-L186' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/973fa1a019b773f952dba5ff52112a00adf8d5d4/src/billiards/obstacles.jl#L166-L186' class='documenter-source'>source</a><br></p>
 <p><a id='DynamicalBilliards.Ellipse' href='#DynamicalBilliards.Ellipse'>#</a>
 <strong><code>DynamicalBilliards.Ellipse</code></strong> &mdash; <em>Type</em>.</p>
 <div class="codehilite"><pre><span></span>Ellipse{T&lt;:AbstractFloat}  &lt;: Obstacle{T}
@@ -829,7 +829,7 @@
 \left(\frac{x - c[1]}{a} \right)^2+ \left(\frac{y - c[2]}{b}\right)^2 = 1
 </script>
 </div>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/1eb31ea32557b8a3d2afba9005758b5662ac36d6/src/billiards/obstacles.jl#L316-L332' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/973fa1a019b773f952dba5ff52112a00adf8d5d4/src/billiards/obstacles.jl#L316-L332' class='documenter-source'>source</a><br></p>
 <hr />
 <p>In addition, <code>translate</code> is a helpful function:</p>
 <p><a id='DynamicalBilliards.translate' href='#DynamicalBilliards.translate'>#</a>
@@ -839,7 +839,7 @@
 
 
 <p>Create a copy of the given obstacle with its position translated by <code>vector</code>.</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/1eb31ea32557b8a3d2afba9005758b5662ac36d6/src/billiards/obstacles.jl#L547-L551' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/973fa1a019b773f952dba5ff52112a00adf8d5d4/src/billiards/obstacles.jl#L547-L551' class='documenter-source'>source</a><br></p>
                 
                   
                 
