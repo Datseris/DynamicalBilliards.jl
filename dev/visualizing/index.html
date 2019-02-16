@@ -610,7 +610,7 @@
 <p>Plot given obstacle on the current <code>PyPlot</code> axes.</p>
 <p>The default arguments for each type of obstacle have been chosen for maximum clarity and consistency.</p>
 <p>The <code>kwargs...</code> given by the user are keywords passed directly into PyPlot's constructors. For <code>Wall</code> obstacles, kwargs are passed into <code>PyPlot.plot()</code>. For <code>Circular</code> obstacles, kwargs are passed into <code>matplotlib.patches.Circle</code> or <code>Arc</code>.</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/973fa1a019b773f952dba5ff52112a00adf8d5d4/src/plotting/obstacles.jl#L11-L21' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/29b62d8819936f73700acc8cc61118dfc490c9ff/src/plotting/obstacles.jl#L11-L21' class='documenter-source'>source</a><br></p>
 <p><a id='PyPlot.plot-Tuple{Billiard}' href='#PyPlot.plot-Tuple{Billiard}'>#</a>
 <strong><code>PyPlot.plot</code></strong> &mdash; <em>Method</em>.</p>
 <div class="codehilite"><pre><span></span><span class="nt">plot</span><span class="o">(</span><span class="nt">bd</span><span class="p">::</span><span class="nd">Billiard</span><span class="o">;</span> <span class="nt">ax</span> <span class="o">=</span> <span class="o">(</span><span class="nt">figure</span><span class="o">();</span> <span class="nt">gca</span><span class="o">()))</span>
@@ -630,7 +630,7 @@
 
 
 <p>Plot the given billiard <code>bd</code> and an acompanying orbit resulting from <a href="../basic/high_level/#DynamicalBilliards.timeseries!"><code>timeseries!</code></a> using the limits defined by <code>xt</code> and <code>yt</code>. Works for both periodic and normal billiards.</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/973fa1a019b773f952dba5ff52112a00adf8d5d4/src/plotting/billiards.jl#L17-L35' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/29b62d8819936f73700acc8cc61118dfc490c9ff/src/plotting/billiards.jl#L17-L35' class='documenter-source'>source</a><br></p>
 <p><a id='PyPlot.plot-Tuple{AbstractParticle,Bool}' href='#PyPlot.plot-Tuple{AbstractParticle,Bool}'>#</a>
 <strong><code>PyPlot.plot</code></strong> &mdash; <em>Method</em>.</p>
 <div class="codehilite"><pre><span></span><span class="nt">plot</span><span class="o">(</span><span class="nt">p</span><span class="p">::</span><span class="nd">AbstractParticle</span> <span class="cp">[</span><span class="p">,</span> <span class="n">cyclotron</span><span class="o">=</span><span class="kc">false</span><span class="cp">]</span><span class="o">;</span> <span class="nt">use_cell</span><span class="o">=</span><span class="nt">true</span><span class="o">,</span> <span class="nt">kwargs</span><span class="o">...)</span>
@@ -640,7 +640,7 @@
 <p>Plot given particle on the current <code>PyPlot</code> axes. Optionally use <code>p.current_cell</code> for the particle's position. Given <code>kwargs...</code> are passed onto <code>PyPlot.scatter</code>.</p>
 <p>The particle is represented as a small ball (<code>PyPlot.scatter</code>) and a small arrow (<code>PyPlot.quiver</code>). All <code>kwargs...</code> are given to <code>scatter</code> but if a keyword argument <code>color</code> is given, it is also passed to <code>quiver</code>.</p>
 <p>Optionally you can plot the cyclotron traced by a <code>MagneticParticle</code> by giving <code>true</code> as second argument.</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/973fa1a019b773f952dba5ff52112a00adf8d5d4/src/plotting/particles.jl#L28-L40' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/29b62d8819936f73700acc8cc61118dfc490c9ff/src/plotting/particles.jl#L28-L40' class='documenter-source'>source</a><br></p>
 <p><a id='DynamicalBilliards.animate_evolution' href='#DynamicalBilliards.animate_evolution'>#</a>
 <strong><code>DynamicalBilliards.animate_evolution</code></strong> &mdash; <em>Function</em>.</p>
 <div class="codehilite"><pre><span></span>animate_evolution(ps, bd, colnumber [, raysplitters]; kwargs...)
@@ -671,7 +671,7 @@
 <li><code>dpi = 100</code> : dpi of saved figures.</li>
 <li><code>framerate = 20</code> : Animation framerate.</li>
 </ul>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/973fa1a019b773f952dba5ff52112a00adf8d5d4/src/plotting/animations.jl#L46-L81' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/29b62d8819936f73700acc8cc61118dfc490c9ff/src/plotting/animations.jl#L46-L81' class='documenter-source'>source</a><br></p>
 <p><a id='Examples-1'></a></p>
 <h2 id="examples">Examples</h2>
 <p><a id='Plotting-Obstacles-with-keywords-1'></a></p>
@@ -827,7 +827,7 @@
 <li><code>obstacleindices = true</code>: show obstacle indices above plot</li>
 <li>Any other keyword argument is passed to <code>PyPlot.plot</code> which plots the points of the section.</li>
 </ul>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/973fa1a019b773f952dba5ff52112a00adf8d5d4/src/plotting/boundarymap_plots.jl#L3-L21' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/29b62d8819936f73700acc8cc61118dfc490c9ff/src/plotting/boundarymap_plots.jl#L3-L21' class='documenter-source'>source</a><br></p>
 <p>Examples are shown in the <a href="../basic/phasespaces/">phase spaces</a> section.</p>
                 
                   
