@@ -555,7 +555,7 @@
 <li>the arc length measured counterclockwise from the open face in <code>Semicircle</code>s</li>
 <li>the arc length measured counterclockwise from the rightmost point in <code>Circular</code>s</li>
 </ul>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/af1296d60a47ac9e405bd6c9144c4043e4a8df0b/src/billiards/billiardtable.jl#L29-L42' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/d1230313f3f2fa225d683ea58eb7ab18b820a14c/src/billiards/billiardtable.jl#L29-L42' class='documenter-source'>source</a><br></p>
 <hr />
 <p>A <code>Billiard</code> is a wrapper of a <code>Tuple</code> of <code>Obstacle</code>s. The abstract Type <code>Obstacle{T}</code> is the supertype of all objects that a particle may collide with, with global billiard precision of type <code>T</code>.</p>
 <p>There are many premade functions that construct well-known billiards, like the periodic Sinai billiard. You can find all of them at the <a href="../../basic/high_level/#standard-billiards-library">Standard Billiards Library</a>.</p>
@@ -641,6 +641,72 @@
 </pre></div>
 
 
+<div class="codehilite"><pre><span></span>┌ Warning: `haskey(o::PyObject, s::Union{Symbol, AbstractString})` is deprecated, use `hasproperty(o, s)` instead.
+│   caller = #gca#51(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function) at PyPlot.jl:176
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:176
+┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.&quot;s&quot;` instead of `o[&quot;s&quot;]`.
+│   caller = #gca#51(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function) at PyPlot.jl:179
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:179
+┌ Warning: `haskey(o::PyObject, s::Union{Symbol, AbstractString})` is deprecated, use `hasproperty(o, s)` instead.
+│   caller = #sca#98(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::PyCall.PyObject) at PyPlot.jl:176
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:176
+┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.&quot;s&quot;` instead of `o[&quot;s&quot;]`.
+│   caller = #sca#98(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::PyCall.PyObject) at PyPlot.jl:179
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:179
+┌ Warning: `haskey(o::PyObject, s::Union{Symbol, AbstractString})` is deprecated, use `hasproperty(o, s)` instead.
+│   caller = #plot#85(::Base.Iterators.Pairs{Symbol,Any,Tuple{Symbol,Symbol,Symbol},NamedTuple{(:color, :linestyle, :lw),Tuple{Tuple{Int64,Float64,Int64},String,Float64}}}, ::Function, ::Array{Float64,1}, ::Vararg{Array{Float64,1},N} where N) at PyPlot.jl:176
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:176
+┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.&quot;s&quot;` instead of `o[&quot;s&quot;]`.
+│   caller = #plot#85(::Base.Iterators.Pairs{Symbol,Any,Tuple{Symbol,Symbol,Symbol},NamedTuple{(:color, :linestyle, :lw),Tuple{Tuple{Int64,Float64,Int64},String,Float64}}}, ::Function, ::Array{Float64,1}, ::Vararg{Array{Float64,1},N} where N) at PyPlot.jl:179
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:179
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = #plot#109(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::Disk{Float64}) at obstacles.jl:27
+└ @ DynamicalBilliards ~/build/JuliaDynamics/DynamicalBilliards.jl/src/plotting/obstacles.jl:27
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = #plot#109(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::Disk{Float64}) at obstacles.jl:30
+└ @ DynamicalBilliards ~/build/JuliaDynamics/DynamicalBilliards.jl/src/plotting/obstacles.jl:30
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = #plot#86(::PyCall.PyObject, ::Function, ::Billiard{Float64,7,Tuple{InfiniteWall{Float64},InfiniteWall{Float64},InfiniteWall{Float64},InfiniteWall{Float64},InfiniteWall{Float64},InfiniteWall{Float64},Disk{Float64}},Nothing}) at billiards.jl:44
+└ @ DynamicalBilliards ~/build/JuliaDynamics/DynamicalBilliards.jl/src/plotting/billiards.jl:44
+┌ Warning: `haskey(o::PyObject, s::Union{Symbol, AbstractString})` is deprecated, use `hasproperty(o, s)` instead.
+│   caller = #xlim#137(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::Float64, ::Vararg{Float64,N} where N) at PyPlot.jl:176
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:176
+┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.&quot;s&quot;` instead of `o[&quot;s&quot;]`.
+│   caller = #xlim#137(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::Float64, ::Vararg{Float64,N} where N) at PyPlot.jl:179
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:179
+┌ Warning: `haskey(o::PyObject, s::Union{Symbol, AbstractString})` is deprecated, use `hasproperty(o, s)` instead.
+│   caller = #ylim#141(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::Float64, ::Vararg{Float64,N} where N) at PyPlot.jl:176
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:176
+┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.&quot;s&quot;` instead of `o[&quot;s&quot;]`.
+│   caller = #ylim#141(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::Float64, ::Vararg{Float64,N} where N) at PyPlot.jl:179
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:179
+┌ Warning: `haskey(o::PyObject, s::Union{Symbol, AbstractString})` is deprecated, use `hasproperty(o, s)` instead.
+│   caller = #plot#85(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::Array{Float64,1}, ::Vararg{Array{Float64,1},N} where N) at PyPlot.jl:176
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:176
+┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.&quot;s&quot;` instead of `o[&quot;s&quot;]`.
+│   caller = #plot#85(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::Array{Float64,1}, ::Vararg{Array{Float64,1},N} where N) at PyPlot.jl:179
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:179
+┌ Warning: `haskey(o::PyObject, s::Union{Symbol, AbstractString})` is deprecated, use `hasproperty(o, s)` instead.
+│   caller = #gca#51(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function) at PyPlot.jl:176
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:176
+┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.&quot;s&quot;` instead of `o[&quot;s&quot;]`.
+│   caller = #gca#51(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function) at PyPlot.jl:179
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:179
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = #plot_particle#114(::PyCall.PyObject, ::Tuple{Int64,Int64,Int64}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::Float64, ::Float64, ::Float64, ::Float64) at particles.jl:20
+└ @ DynamicalBilliards ~/build/JuliaDynamics/DynamicalBilliards.jl/src/plotting/particles.jl:20
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = #plot_particle#114(::PyCall.PyObject, ::Tuple{Int64,Int64,Int64}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::Float64, ::Float64, ::Float64, ::Float64) at particles.jl:22
+└ @ DynamicalBilliards ~/build/JuliaDynamics/DynamicalBilliards.jl/src/plotting/particles.jl:22
+┌ Warning: `haskey(o::PyObject, s::Union{Symbol, AbstractString})` is deprecated, use `hasproperty(o, s)` instead.
+│   caller = #savefig#97(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::String) at PyPlot.jl:176
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:176
+┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.&quot;s&quot;` instead of `o[&quot;s&quot;]`.
+│   caller = #savefig#97(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::String) at PyPlot.jl:179
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:179
+</pre></div>
+
+
 <p><img alt="" src="../tut1.svg" /></p>
 <p>The billiard table now works for straight or magnetic propagation. To expand this to ray-splitting you have to use ray-splitting <code>Obstacle</code>s (<a href="../../tutorials/ray-splitting">see the tutorial on Ray-Splitting</a>). Additional information on how to define your own <code>Obstacle</code> sub-type is given in the tutorial on <a href="../../tutorials/own_obstacle">Defining your own Obstacles</a>.</p>
 <p>If you make <em>any</em> billiard system that you think is cool and missing from this package, you are more than welcome to submit a PR extending the Standard Billiards Library with your contribution!</p>
@@ -668,7 +734,7 @@
 
 
 <p>Obstacle supertype.</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/af1296d60a47ac9e405bd6c9144c4043e4a8df0b/src/billiards/obstacles.jl#L10-L13' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/d1230313f3f2fa225d683ea58eb7ab18b820a14c/src/billiards/obstacles.jl#L10-L13' class='documenter-source'>source</a><br></p>
 <p><a id='DynamicalBilliards.Disk' href='#DynamicalBilliards.Disk'>#</a>
 <strong><code>DynamicalBilliards.Disk</code></strong> &mdash; <em>Type</em>.</p>
 <div class="codehilite"><pre><span></span>Disk{T&lt;:AbstractFloat}  &lt;: Circular{T}
@@ -682,7 +748,7 @@
 <li><code>r::T</code> : Radius.</li>
 <li><code>name::String</code> : Some name given for user convenience. Defaults to "Disk".</li>
 </ul>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/af1296d60a47ac9e405bd6c9144c4043e4a8df0b/src/billiards/obstacles.jl#L24-L31' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/d1230313f3f2fa225d683ea58eb7ab18b820a14c/src/billiards/obstacles.jl#L24-L31' class='documenter-source'>source</a><br></p>
 <p><a id='DynamicalBilliards.RandomDisk' href='#DynamicalBilliards.RandomDisk'>#</a>
 <strong><code>DynamicalBilliards.RandomDisk</code></strong> &mdash; <em>Type</em>.</p>
 <div class="codehilite"><pre><span></span>RandomDisk{T&lt;:AbstractFloat} &lt;: Circular{T}
@@ -696,7 +762,7 @@
 <li><code>r::T</code> : Radius.</li>
 <li><code>name::String</code> : Some name given for user convenience. Defaults to "Random disk".</li>
 </ul>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/af1296d60a47ac9e405bd6c9144c4043e4a8df0b/src/billiards/obstacles.jl#L44-L52' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/d1230313f3f2fa225d683ea58eb7ab18b820a14c/src/billiards/obstacles.jl#L44-L52' class='documenter-source'>source</a><br></p>
 <p><a id='DynamicalBilliards.Antidot' href='#DynamicalBilliards.Antidot'>#</a>
 <strong><code>DynamicalBilliards.Antidot</code></strong> &mdash; <em>Type</em>.</p>
 <div class="codehilite"><pre><span></span>Antidot{T&lt;:AbstractFloat} &lt;: Circular{T}
@@ -711,7 +777,7 @@
 <li><code>pflag::Bool</code> : Flag that keeps track of where the particle is currently propagating (<code>pflag</code> = propagation-flag). <code>true</code> stands for <em>outside</em> the disk, <code>false</code> for <em>inside</em> the disk. Defaults to <code>true</code>.</li>
 <li><code>name::String</code> : Name of the obstacle given for user convenience. Defaults to "Antidot".</li>
 </ul>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/af1296d60a47ac9e405bd6c9144c4043e4a8df0b/src/billiards/obstacles.jl#L65-L78' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/d1230313f3f2fa225d683ea58eb7ab18b820a14c/src/billiards/obstacles.jl#L65-L78' class='documenter-source'>source</a><br></p>
 <p><a id='DynamicalBilliards.Semicircle' href='#DynamicalBilliards.Semicircle'>#</a>
 <strong><code>DynamicalBilliards.Semicircle</code></strong> &mdash; <em>Type</em>.</p>
 <div class="codehilite"><pre><span></span>Semicircle{T&lt;:AbstractFloat} &lt;: Circular{T}
@@ -726,7 +792,7 @@
 <li><code>facedir::SVector{2,T}</code> : Direction where the open face of the Semicircle is facing.</li>
 <li><code>name::String</code> : Name of the obstacle given for user convenience. Defaults to "Semicircle".</li>
 </ul>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/af1296d60a47ac9e405bd6c9144c4043e4a8df0b/src/billiards/obstacles.jl#L93-L103' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/d1230313f3f2fa225d683ea58eb7ab18b820a14c/src/billiards/obstacles.jl#L93-L103' class='documenter-source'>source</a><br></p>
 <p><a id='DynamicalBilliards.InfiniteWall' href='#DynamicalBilliards.InfiniteWall'>#</a>
 <strong><code>DynamicalBilliards.InfiniteWall</code></strong> &mdash; <em>Type</em>.</p>
 <div class="codehilite"><pre><span></span>InfiniteWall{T&lt;:AbstractFloat} &lt;: Wall{T}
@@ -741,7 +807,7 @@
 <li><code>normal::SVector{2,T}</code> : Normal vector to the wall, pointing to where the particle <em>will come from before a collision</em> (pointing towards the inside of the billiard). The size of the vector is irrelevant since it is internally normalized.</li>
 <li><code>name::String</code> : Name of the obstacle, given for user convenience. Defaults to "Wall".</li>
 </ul>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/af1296d60a47ac9e405bd6c9144c4043e4a8df0b/src/billiards/obstacles.jl#L134-L147' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/d1230313f3f2fa225d683ea58eb7ab18b820a14c/src/billiards/obstacles.jl#L134-L147' class='documenter-source'>source</a><br></p>
 <p><a id='DynamicalBilliards.RandomWall' href='#DynamicalBilliards.RandomWall'>#</a>
 <strong><code>DynamicalBilliards.RandomWall</code></strong> &mdash; <em>Type</em>.</p>
 <div class="codehilite"><pre><span></span>RandomWall{T&lt;:AbstractFloat} &lt;: Wall{T}
@@ -756,7 +822,7 @@
 <li><code>normal::SVector{2,T}</code> : Normal vector to the wall, pointing to where the particle <em>is expected to come from</em> (pointing towards the inside of the billiard).</li>
 <li><code>name::String</code> : Name of the obstacle, given for user convenience. Defaults to "Random wall".</li>
 </ul>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/af1296d60a47ac9e405bd6c9144c4043e4a8df0b/src/billiards/obstacles.jl#L213-L224' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/d1230313f3f2fa225d683ea58eb7ab18b820a14c/src/billiards/obstacles.jl#L213-L224' class='documenter-source'>source</a><br></p>
 <p><a id='DynamicalBilliards.PeriodicWall' href='#DynamicalBilliards.PeriodicWall'>#</a>
 <strong><code>DynamicalBilliards.PeriodicWall</code></strong> &mdash; <em>Type</em>.</p>
 <div class="codehilite"><pre><span></span>PeriodicWall{T&lt;:AbstractFloat} &lt;: Wall{T}
@@ -771,7 +837,7 @@
 <li><code>normal::SVector{2,T}</code> : Normal vector to the wall, pointing to where the particle <em>will come from</em> (to the inside the billiard). The size of the vector is <strong>important</strong>! This vector is added to a particle's <code>pos</code> during collision. Therefore the size of the normal vector must be correctly associated with the size of the periodic cell.</li>
 <li><code>name::String</code> : Name of the obstacle, given for user convenience. Defaults to "Periodic wall".</li>
 </ul>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/af1296d60a47ac9e405bd6c9144c4043e4a8df0b/src/billiards/obstacles.jl#L242-L256' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/d1230313f3f2fa225d683ea58eb7ab18b820a14c/src/billiards/obstacles.jl#L242-L256' class='documenter-source'>source</a><br></p>
 <p><a id='DynamicalBilliards.SplitterWall' href='#DynamicalBilliards.SplitterWall'>#</a>
 <strong><code>DynamicalBilliards.SplitterWall</code></strong> &mdash; <em>Type</em>.</p>
 <div class="codehilite"><pre><span></span>SplitterWall{T&lt;:AbstractFloat} &lt;: Wall{T}
@@ -787,7 +853,7 @@
 <li><code>pflag::Bool</code> : Flag that keeps track of where the particle is currently propagating (<code>pflag</code> = propagation flag). <code>true</code> is associated with the <code>normal</code> vector the wall is instantiated with. Defaults to <code>true</code>.</li>
 <li><code>name::String</code> : Name of the obstacle, given for user convenience. Defaults to "Splitter wall".</li>
 </ul>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/af1296d60a47ac9e405bd6c9144c4043e4a8df0b/src/billiards/obstacles.jl#L274-L289' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/d1230313f3f2fa225d683ea58eb7ab18b820a14c/src/billiards/obstacles.jl#L274-L289' class='documenter-source'>source</a><br></p>
 <p><a id='DynamicalBilliards.FiniteWall' href='#DynamicalBilliards.FiniteWall'>#</a>
 <strong><code>DynamicalBilliards.FiniteWall</code></strong> &mdash; <em>Type</em>.</p>
 <div class="codehilite"><pre><span></span>FiniteWall{T&lt;:AbstractFloat} &lt;: Wall{T}
@@ -804,7 +870,7 @@
 <li><code>isdoor::Bool</code> : Flag of whether this <code>FiniteWall</code> instance is a "Door".</li>
 <li><code>name::String</code> : Name of the obstacle, given for user convenience. Defaults to "Finite Wall".</li>
 </ul>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/af1296d60a47ac9e405bd6c9144c4043e4a8df0b/src/billiards/obstacles.jl#L166-L186' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/d1230313f3f2fa225d683ea58eb7ab18b820a14c/src/billiards/obstacles.jl#L166-L186' class='documenter-source'>source</a><br></p>
 <p><a id='DynamicalBilliards.Ellipse' href='#DynamicalBilliards.Ellipse'>#</a>
 <strong><code>DynamicalBilliards.Ellipse</code></strong> &mdash; <em>Type</em>.</p>
 <div class="codehilite"><pre><span></span>Ellipse{T&lt;:AbstractFloat}  &lt;: Obstacle{T}
@@ -829,7 +895,7 @@
 \left(\frac{x - c[1]}{a} \right)^2+ \left(\frac{y - c[2]}{b}\right)^2 = 1
 </script>
 </div>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/af1296d60a47ac9e405bd6c9144c4043e4a8df0b/src/billiards/obstacles.jl#L316-L332' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/d1230313f3f2fa225d683ea58eb7ab18b820a14c/src/billiards/obstacles.jl#L316-L332' class='documenter-source'>source</a><br></p>
 <hr />
 <p>In addition, <code>translate</code> is a helpful function:</p>
 <p><a id='DynamicalBilliards.translate' href='#DynamicalBilliards.translate'>#</a>
@@ -839,7 +905,7 @@
 
 
 <p>Create a copy of the given obstacle with its position translated by <code>vector</code>.</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/af1296d60a47ac9e405bd6c9144c4043e4a8df0b/src/billiards/obstacles.jl#L547-L551' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/d1230313f3f2fa225d683ea58eb7ab18b820a14c/src/billiards/obstacles.jl#L547-L551' class='documenter-source'>source</a><br></p>
                 
                   
                 

@@ -611,6 +611,60 @@
 </pre></div>
 
 
+<div class="codehilite"><pre><span></span>┌ Warning: `haskey(o::PyObject, s::Union{Symbol, AbstractString})` is deprecated, use `hasproperty(o, s)` instead.
+│   caller = #gca#51(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function) at PyPlot.jl:176
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:176
+┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.&quot;s&quot;` instead of `o[&quot;s&quot;]`.
+│   caller = #gca#51(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function) at PyPlot.jl:179
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:179
+┌ Warning: `haskey(o::PyObject, s::Union{Symbol, AbstractString})` is deprecated, use `hasproperty(o, s)` instead.
+│   caller = #sca#98(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::PyCall.PyObject) at PyPlot.jl:176
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:176
+┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.&quot;s&quot;` instead of `o[&quot;s&quot;]`.
+│   caller = #sca#98(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::PyCall.PyObject) at PyPlot.jl:179
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:179
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = #plot#109(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::Antidot{Float64}) at obstacles.jl:27
+└ @ DynamicalBilliards ~/build/JuliaDynamics/DynamicalBilliards.jl/src/plotting/obstacles.jl:27
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = #plot#109(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::Antidot{Float64}) at obstacles.jl:30
+└ @ DynamicalBilliards ~/build/JuliaDynamics/DynamicalBilliards.jl/src/plotting/obstacles.jl:30
+┌ Warning: `haskey(o::PyObject, s::Union{Symbol, AbstractString})` is deprecated, use `hasproperty(o, s)` instead.
+│   caller = #plot#85(::Base.Iterators.Pairs{Symbol,Any,Tuple{Symbol,Symbol,Symbol},NamedTuple{(:color, :linestyle, :lw),Tuple{Tuple{Float64,Float64,Int64},String,Float64}}}, ::Function, ::Array{Float64,1}, ::Vararg{Array{Float64,1},N} where N) at PyPlot.jl:176
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:176
+┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.&quot;s&quot;` instead of `o[&quot;s&quot;]`.
+│   caller = #plot#85(::Base.Iterators.Pairs{Symbol,Any,Tuple{Symbol,Symbol,Symbol},NamedTuple{(:color, :linestyle, :lw),Tuple{Tuple{Float64,Float64,Int64},String,Float64}}}, ::Function, ::Array{Float64,1}, ::Vararg{Array{Float64,1},N} where N) at PyPlot.jl:179
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:179
+┌ Warning: `haskey(o::PyObject, s::Union{Symbol, AbstractString})` is deprecated, use `hasproperty(o, s)` instead.
+│   caller = #plot#85(::Base.Iterators.Pairs{Symbol,Any,Tuple{Symbol,Symbol,Symbol},NamedTuple{(:color, :linestyle, :lw),Tuple{Tuple{Int64,Float64,Int64},String,Float64}}}, ::Function, ::Array{Float64,1}, ::Vararg{Array{Float64,1},N} where N) at PyPlot.jl:176
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:176
+┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.&quot;s&quot;` instead of `o[&quot;s&quot;]`.
+│   caller = #plot#85(::Base.Iterators.Pairs{Symbol,Any,Tuple{Symbol,Symbol,Symbol},NamedTuple{(:color, :linestyle, :lw),Tuple{Tuple{Int64,Float64,Int64},String,Float64}}}, ::Function, ::Array{Float64,1}, ::Vararg{Array{Float64,1},N} where N) at PyPlot.jl:179
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:179
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = #plot#86(::PyCall.PyObject, ::Function, ::Billiard{Float64,7,Tuple{Antidot{Float64},Antidot{Float64},SplitterWall{Float64},InfiniteWall{Float64},InfiniteWall{Float64},InfiniteWall{Float64},InfiniteWall{Float64}},Nothing}) at billiards.jl:44
+└ @ DynamicalBilliards ~/build/JuliaDynamics/DynamicalBilliards.jl/src/plotting/billiards.jl:44
+┌ Warning: `haskey(o::PyObject, s::Union{Symbol, AbstractString})` is deprecated, use `hasproperty(o, s)` instead.
+│   caller = #xlim#137(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::Float64, ::Vararg{Float64,N} where N) at PyPlot.jl:176
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:176
+┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.&quot;s&quot;` instead of `o[&quot;s&quot;]`.
+│   caller = #xlim#137(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::Float64, ::Vararg{Float64,N} where N) at PyPlot.jl:179
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:179
+┌ Warning: `haskey(o::PyObject, s::Union{Symbol, AbstractString})` is deprecated, use `hasproperty(o, s)` instead.
+│   caller = #ylim#141(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::Float64, ::Vararg{Float64,N} where N) at PyPlot.jl:176
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:176
+┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.&quot;s&quot;` instead of `o[&quot;s&quot;]`.
+│   caller = #ylim#141(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::Float64, ::Vararg{Float64,N} where N) at PyPlot.jl:179
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:179
+┌ Warning: `haskey(o::PyObject, s::Union{Symbol, AbstractString})` is deprecated, use `hasproperty(o, s)` instead.
+│   caller = #savefig#97(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::String) at PyPlot.jl:176
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:176
+┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.&quot;s&quot;` instead of `o[&quot;s&quot;]`.
+│   caller = #savefig#97(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::String) at PyPlot.jl:179
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:179
+</pre></div>
+
+
 <p><img alt="" src="../raybil.svg" /></p>
 <!– ![Ray-splitting billiard](https://i.imgur.com/UKsyURY.png) –>
 
@@ -632,7 +686,7 @@
 </ol>
 <p>The above three functions use the <strong>same convention</strong>: the argument <code>pflag</code> is the one the obstacle has <strong>before transmission</strong>. For example, if a particle is outside an <a href="../tutorials/billiard_table/#DynamicalBilliards.Antidot"><code>Antidot</code></a> (with <code>pflag = true</code> here) and is transmitted inside the <code>Antidot</code> (<code>pflag</code> becomes <code>false</code> here), then all three functions will be given their second argument (the Boolean one) as <code>true</code>!</p>
 <p><code>affect</code> is a function, and denotes which obstacles of the billiard are affected when transmission occurs at obstacle <code>i</code> (for which obstacles should the field <code>pflag</code> be reversed). Defaults to <code>idxs = (i) -&gt; i</code>, i.e. only the colliding obstacle is affected. If you want many obstacles to be affected you could write <code>idxs = (i) -&gt; SVector(2,3,5)</code>, etc. Keep in mind that the only values of <code>i</code> that can be passed into this function are the ones that are given in the argument <code>idxs</code>!</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/af1296d60a47ac9e405bd6c9144c4043e4a8df0b/src/raysplitting.jl#L8-L38' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/d1230313f3f2fa225d683ea58eb7ab18b820a14c/src/raysplitting.jl#L8-L38' class='documenter-source'>source</a><br></p>
 <hr />
 <p>If you want different type of transmission/refraction functions for different obstacles, then you define multiple <code>RaySplitter</code>s.</p>
 <p>Continuing from the above billiard, let's also create some <code>RaySplitter</code> instances for it.</p>
@@ -699,6 +753,72 @@
 </pre></div>
 
 
+<div class="codehilite"><pre><span></span>┌ Warning: `haskey(o::PyObject, s::Union{Symbol, AbstractString})` is deprecated, use `hasproperty(o, s)` instead.
+│   caller = #gca#51(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function) at PyPlot.jl:176
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:176
+┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.&quot;s&quot;` instead of `o[&quot;s&quot;]`.
+│   caller = #gca#51(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function) at PyPlot.jl:179
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:179
+┌ Warning: `haskey(o::PyObject, s::Union{Symbol, AbstractString})` is deprecated, use `hasproperty(o, s)` instead.
+│   caller = #sca#98(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::PyCall.PyObject) at PyPlot.jl:176
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:176
+┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.&quot;s&quot;` instead of `o[&quot;s&quot;]`.
+│   caller = #sca#98(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::PyCall.PyObject) at PyPlot.jl:179
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:179
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = #plot#109(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::Antidot{Float64}) at obstacles.jl:27
+└ @ DynamicalBilliards ~/build/JuliaDynamics/DynamicalBilliards.jl/src/plotting/obstacles.jl:27
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = #plot#109(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::Antidot{Float64}) at obstacles.jl:30
+└ @ DynamicalBilliards ~/build/JuliaDynamics/DynamicalBilliards.jl/src/plotting/obstacles.jl:30
+┌ Warning: `haskey(o::PyObject, s::Union{Symbol, AbstractString})` is deprecated, use `hasproperty(o, s)` instead.
+│   caller = #plot#85(::Base.Iterators.Pairs{Symbol,Any,Tuple{Symbol,Symbol,Symbol},NamedTuple{(:color, :linestyle, :lw),Tuple{Tuple{Float64,Float64,Int64},String,Float64}}}, ::Function, ::Array{Float64,1}, ::Vararg{Array{Float64,1},N} where N) at PyPlot.jl:176
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:176
+┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.&quot;s&quot;` instead of `o[&quot;s&quot;]`.
+│   caller = #plot#85(::Base.Iterators.Pairs{Symbol,Any,Tuple{Symbol,Symbol,Symbol},NamedTuple{(:color, :linestyle, :lw),Tuple{Tuple{Float64,Float64,Int64},String,Float64}}}, ::Function, ::Array{Float64,1}, ::Vararg{Array{Float64,1},N} where N) at PyPlot.jl:179
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:179
+┌ Warning: `haskey(o::PyObject, s::Union{Symbol, AbstractString})` is deprecated, use `hasproperty(o, s)` instead.
+│   caller = #plot#85(::Base.Iterators.Pairs{Symbol,Any,Tuple{Symbol,Symbol,Symbol},NamedTuple{(:color, :linestyle, :lw),Tuple{Tuple{Int64,Float64,Int64},String,Float64}}}, ::Function, ::Array{Float64,1}, ::Vararg{Array{Float64,1},N} where N) at PyPlot.jl:176
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:176
+┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.&quot;s&quot;` instead of `o[&quot;s&quot;]`.
+│   caller = #plot#85(::Base.Iterators.Pairs{Symbol,Any,Tuple{Symbol,Symbol,Symbol},NamedTuple{(:color, :linestyle, :lw),Tuple{Tuple{Int64,Float64,Int64},String,Float64}}}, ::Function, ::Array{Float64,1}, ::Vararg{Array{Float64,1},N} where N) at PyPlot.jl:179
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:179
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = #plot#86(::PyCall.PyObject, ::Function, ::Billiard{Float64,7,Tuple{Antidot{Float64},Antidot{Float64},SplitterWall{Float64},InfiniteWall{Float64},InfiniteWall{Float64},InfiniteWall{Float64},InfiniteWall{Float64}},Nothing}) at billiards.jl:44
+└ @ DynamicalBilliards ~/build/JuliaDynamics/DynamicalBilliards.jl/src/plotting/billiards.jl:44
+┌ Warning: `haskey(o::PyObject, s::Union{Symbol, AbstractString})` is deprecated, use `hasproperty(o, s)` instead.
+│   caller = #xlim#137(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::Float64, ::Vararg{Float64,N} where N) at PyPlot.jl:176
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:176
+┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.&quot;s&quot;` instead of `o[&quot;s&quot;]`.
+│   caller = #xlim#137(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::Float64, ::Vararg{Float64,N} where N) at PyPlot.jl:179
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:179
+┌ Warning: `haskey(o::PyObject, s::Union{Symbol, AbstractString})` is deprecated, use `hasproperty(o, s)` instead.
+│   caller = #ylim#141(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::Float64, ::Vararg{Float64,N} where N) at PyPlot.jl:176
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:176
+┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.&quot;s&quot;` instead of `o[&quot;s&quot;]`.
+│   caller = #ylim#141(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::Float64, ::Vararg{Float64,N} where N) at PyPlot.jl:179
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:179
+┌ Warning: `haskey(o::PyObject, s::Union{Symbol, AbstractString})` is deprecated, use `hasproperty(o, s)` instead.
+│   caller = #plot#85(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::Array{Float64,1}, ::Vararg{Array{Float64,1},N} where N) at PyPlot.jl:176
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:176
+┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.&quot;s&quot;` instead of `o[&quot;s&quot;]`.
+│   caller = #plot#85(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::Array{Float64,1}, ::Vararg{Array{Float64,1},N} where N) at PyPlot.jl:179
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:179
+┌ Warning: `haskey(o::PyObject, s::Union{Symbol, AbstractString})` is deprecated, use `hasproperty(o, s)` instead.
+│   caller = #scatter#99(::Base.Iterators.Pairs{Symbol,String,Tuple{Symbol},NamedTuple{(:color,),Tuple{String}}}, ::Function, ::Float64, ::Vararg{Float64,N} where N) at PyPlot.jl:176
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:176
+┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.&quot;s&quot;` instead of `o[&quot;s&quot;]`.
+│   caller = #scatter#99(::Base.Iterators.Pairs{Symbol,String,Tuple{Symbol},NamedTuple{(:color,),Tuple{String}}}, ::Function, ::Float64, ::Vararg{Float64,N} where N) at PyPlot.jl:179
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:179
+┌ Warning: `haskey(o::PyObject, s::Union{Symbol, AbstractString})` is deprecated, use `hasproperty(o, s)` instead.
+│   caller = #savefig#97(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::String) at PyPlot.jl:176
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:176
+┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.&quot;s&quot;` instead of `o[&quot;s&quot;]`.
+│   caller = #savefig#97(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::String) at PyPlot.jl:179
+└ @ PyPlot ~/.julia/packages/PyPlot/mQXSC/src/PyPlot.jl:179
+</pre></div>
+
+
 <p><img alt="" src="../rayorbit.svg" /></p>
 <p>You can see that at some points the particle crossed the boundaries of the red obstacles, which allow for ray splitting. It is even cooler to animate this motion using <a href="../visualizing/#DynamicalBilliards.animate_evolution"><code>animate_evolution</code></a>!</p>
 <video width="100%" height="auto" controls> <source src="https://raw.githubusercontent.com/JuliaDynamics/JuliaDynamics/master/videos/billiards/ray.mp4?raw=true" type="video/mp4"> </video>
@@ -750,7 +870,7 @@
 <li>Ray reversal is true: θ(θ(φ, pflag, ω), !pflag, ω) ≈ φ</li>
 <li>Magnetic conservation is true: (ω<em>new(ω</em>new(ω, pflag), !pflag) ≈ ω</li>
 </ul>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/af1296d60a47ac9e405bd6c9144c4043e4a8df0b/src/raysplitting.jl#L327-L339' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/d1230313f3f2fa225d683ea58eb7ab18b820a14c/src/raysplitting.jl#L327-L339' class='documenter-source'>source</a><br></p>
 <p><a id='Snell's-Law-1'></a></p>
 <h2 id="snells-law">Snell's Law</h2>
 <p>In classical geometric optics, the refraction of a ray of light moving from one medium to another is described by Snell's law. For an angle of incidence of <span><span class="MathJax_Preview">\phi</span><script type="math/tex">\phi</script></span>, the refraction angle <span><span class="MathJax_Preview">\theta</span><script type="math/tex">\theta</script></span> is determined by the equation</p>
@@ -772,7 +892,7 @@
 
 <p>Create transmission and refraction functions <code>t, r</code> that follow Snell's law, i.e. the transmission probability is set to 1.0 except for the case of total internal reflection. </p>
 <p><code>n1</code> is the index of refraction for the <code>pflag = false</code> side of an obstacle, while <code>n2</code> is the index of refraction for <code>pflag = true</code>.</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/af1296d60a47ac9e405bd6c9144c4043e4a8df0b/src/raysplitting.jl#L400-L409' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/d1230313f3f2fa225d683ea58eb7ab18b820a14c/src/raysplitting.jl#L400-L409' class='documenter-source'>source</a><br></p>
 <p>Using the functions returned by <code>law_of_refraction</code>, we can set up a <code>RaySplitter</code> for a billiard.</p>
 <div class="codehilite"><pre><span></span><span class="k">using</span> <span class="n">DynamicalBilliards</span><span class="p">,</span> <span class="n">PyPlot</span>
 <span class="c"># Create a circular &quot;lens&quot;</span>
