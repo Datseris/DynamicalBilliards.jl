@@ -649,7 +649,7 @@
 <ol>
 <li><a href="../../basic/low_level/#DynamicalBilliards.cellsize"><code>DynamicalBilliards.cellsize</code></a> : Enables <a href="../../basic/high_level/#DynamicalBilliards.randominside"><code>randominside</code></a> with this obstacle.</li>
 <li><a href="../../basic/low_level/#DynamicalBilliards.collision"><code>collision</code></a> with <a href="../../basic/high_level/#particles"><code>MagneticParticle</code></a> : enables magnetic propagation</li>
-<li><a href="../../visualizing/#PyPlot.plot-Tuple{Obstacle}"><code>plot</code></a> with <code>obstacle</code> : enables plotting</li>
+<li><a href="../../visualizing/#PyPlot.plot-Tuple{Billiard}"><code>plot</code></a> with <code>obstacle</code> : enables plotting</li>
 <li><a href="../../basic/low_level/#DynamicalBilliards.specular!"><code>DynamicalBilliards.specular!</code></a> with <code>offset</code> : Allows <a href="../../lyapunovs/#DynamicalBilliards.lyapunovspectrum"><code>lyapunovspectrum</code></a> to be computed.</li>
 <li><a href="../../basic/phasespaces/#DynamicalBilliards.to_bcoords"><code>to_bcoords</code></a> : Allows the <a href="../../basic/phasespaces/#DynamicalBilliards.boundarymap"><code>boundarymap</code></a> and <a href="../../basic/phasespaces/#DynamicalBilliards.boundarymap_portion"><code>boundarymap_portion</code></a> to be computed.</li>
 <li><a href="../../basic/phasespaces/#DynamicalBilliards.from_bcoords"><code>from_bcoords</code></a> : Allows <a href="../../basic/phasespaces/#DynamicalBilliards.phasespace_portion"><code>phasespace_portion</code></a> to be computed.</li>
@@ -706,17 +706,17 @@
 </pre></div>
 
 
-<p>Then, we add swag by writing a method for <a href="../../visualizing/#PyPlot.plot-Tuple{Obstacle}"><code>plot</code></a>:</p>
+<p>Then, we add swag by writing a method for <a href="../../visualizing/#PyPlot.plot-Tuple{Billiard}"><code>plot</code></a>:</p>
 <div class="codehilite"><pre><span></span><span class="k">using</span> <span class="n">PyPlot</span>
 
 <span class="k">function</span> <span class="n">plot</span><span class="p">(</span><span class="n">d</span><span class="o">::</span><span class="n">Semicircle</span><span class="p">;</span> <span class="n">kwargs</span><span class="o">...</span><span class="p">)</span>
     <span class="n">theta1</span> <span class="o">=</span> <span class="n">atan</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">facedir</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">d</span><span class="o">.</span><span class="n">facedir</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">*</span><span class="mi">180</span><span class="o">/</span><span class="nb">π</span> <span class="o">+</span> <span class="mi">90</span>
     <span class="n">theta2</span> <span class="o">=</span> <span class="n">theta1</span> <span class="o">+</span> <span class="mi">180</span>
     <span class="n">edgecolor</span> <span class="o">=</span> <span class="n">DynamicalBilliards</span><span class="o">.</span><span class="n">obcolor</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
-    <span class="n">s1</span> <span class="o">=</span> <span class="n">PyPlot</span><span class="o">.</span><span class="n">matplotlib</span><span class="p">[</span><span class="o">:</span><span class="n">patches</span><span class="p">][</span><span class="o">:</span><span class="n">Arc</span><span class="p">](</span>
+    <span class="n">s1</span> <span class="o">=</span> <span class="n">PyPlot</span><span class="o">.</span><span class="n">matplotlib</span><span class="o">.</span><span class="n">patches</span><span class="o">.</span><span class="n">Arc</span><span class="p">(</span>
         <span class="n">d</span><span class="o">.</span><span class="n">c</span><span class="p">,</span> <span class="mi">2</span><span class="n">d</span><span class="o">.</span><span class="n">r</span><span class="p">,</span> <span class="mi">2</span><span class="n">d</span><span class="o">.</span><span class="n">r</span><span class="p">,</span> <span class="n">theta1</span> <span class="o">=</span> <span class="n">theta1</span><span class="p">,</span> <span class="n">theta2</span> <span class="o">=</span> <span class="n">theta2</span><span class="p">,</span> <span class="n">edgecolor</span> <span class="o">=</span> <span class="n">edgecolor</span><span class="p">,</span>
         <span class="n">lw</span> <span class="o">=</span> <span class="mf">2.0</span><span class="p">,</span> <span class="n">kwargs</span><span class="o">...</span><span class="p">)</span>
-    <span class="n">PyPlot</span><span class="o">.</span><span class="n">gca</span><span class="p">()[</span><span class="o">:</span><span class="n">add_artist</span><span class="p">](</span><span class="n">s1</span><span class="p">)</span>
+    <span class="n">PyPlot</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">add_artist</span><span class="p">(</span><span class="n">s1</span><span class="p">)</span>
     <span class="n">PyPlot</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 <span class="k">end</span>
 </pre></div>
