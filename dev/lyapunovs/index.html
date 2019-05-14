@@ -502,7 +502,7 @@
 <p>Returns zeros for pinned particles.</p>
 <p>If a particle is not given, a random one is picked through <a href="../basic/high_level/#DynamicalBilliards.randominside"><code>randominside</code></a>. See <a href="../basic/high_level/#DynamicalBilliards.parallelize"><code>parallelize</code></a> for a parallelized version.</p>
 <p>[1] : Ch. Dellago <em>et al</em>, <a href="http://link.aps.org/doi/10.1103/PhysRevE.53.1485">Phys. Rev. E <strong>53</strong> (1996)</a></p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/dbbf337f7b0c94131c26b4793da7236ef31d99b9/src/lyapunov_spectrum.jl#L275-L288' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/76cb313f7e844d1905372b1281ff1442c18e835e/src/lyapunov_spectrum.jl#L275-L288' class='documenter-source'>source</a><br></p>
 <p>Here its basic use is illustrated</p>
 <div class="codehilite"><pre><span></span><span class="k">using</span> <span class="n">DynamicalBilliards</span>
 
@@ -518,11 +518,11 @@
 </pre></div>
 
 
-<div class="codehilite"><pre><span></span>4-element Array{Float64,1}:
-  0.6737313484508357  
-  0.001001433966332144
- -7.237569601376874e-5
- -0.6746604067211542  
+<div class="codehilite"><pre><span></span><span class="mi">4</span><span class="o">-</span><span class="n">element</span> <span class="nb">Array</span><span class="err">{</span><span class="n">Float64</span><span class="p">,</span><span class="mi">1</span><span class="err">}</span><span class="p">:</span>
+  <span class="mi">0</span><span class="p">.</span><span class="mi">6380337022288654</span>    
+  <span class="mi">0</span><span class="p">.</span><span class="mi">0006190271363105099</span> 
+ <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">00017069767136604908</span>
+ <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">6384820316938097</span>    
 </pre></div>
 
 
@@ -581,7 +581,7 @@
 
 
 <p>[1] : Ch. Dellago <em>et al</em>, <a href="http://link.aps.org/doi/10.1103/PhysRevE.53.1485">Phys. Rev. E <strong>53</strong> (1996)</a></p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/dbbf337f7b0c94131c26b4793da7236ef31d99b9/src/lyapunov_spectrum.jl#L348-L379' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/76cb313f7e844d1905372b1281ff1442c18e835e/src/lyapunov_spectrum.jl#L348-L379' class='documenter-source'>source</a><br></p>
 <hr />
 <p>For example, lets plot the evolution of the perturbation growth using different colors for collisions with walls and disks in the Sinai billiard:</p>
 <div class="codehilite"><pre><span></span><span class="k">using</span> <span class="n">DynamicalBilliards</span><span class="p">,</span> <span class="n">PyPlot</span><span class="p">,</span> <span class="n">LinearAlgebra</span>
