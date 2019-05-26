@@ -502,7 +502,7 @@
 <p>Returns zeros for pinned particles.</p>
 <p>If a particle is not given, a random one is picked through <a href="../basic/high_level/#DynamicalBilliards.randominside"><code>randominside</code></a>. See <a href="../basic/high_level/#DynamicalBilliards.parallelize"><code>parallelize</code></a> for a parallelized version.</p>
 <p>[1] : Ch. Dellago <em>et al</em>, <a href="http://link.aps.org/doi/10.1103/PhysRevE.53.1485">Phys. Rev. E <strong>53</strong> (1996)</a></p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/66cccdf39347ffbf9cdfd83a841a25efb1b85a8e/src/lyapunov_spectrum.jl#L275-L288' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/38e748b9cd6ad08126b980fcd395d01c7b2ecea6/src/lyapunov_spectrum.jl#L275-L288' class='documenter-source'>source</a><br></p>
 <p>Here its basic use is illustrated</p>
 <div class="codehilite"><pre><span></span><span class="k">using</span> <span class="n">DynamicalBilliards</span>
 
@@ -519,10 +519,10 @@
 
 
 <div class="codehilite"><pre><span></span><span class="mi">4</span><span class="o">-</span><span class="n">element</span> <span class="nb">Array</span><span class="err">{</span><span class="n">Float64</span><span class="p">,</span><span class="mi">1</span><span class="err">}</span><span class="p">:</span>
-  <span class="mi">0</span><span class="p">.</span><span class="mi">6520498676826643</span>    
-  <span class="mi">0</span><span class="p">.</span><span class="mi">00010114225343693632</span>
- <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">0008464976799649513</span> 
- <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">6513045122561353</span>    
+  <span class="mi">0</span><span class="p">.</span><span class="mi">5856121302283751</span>    
+  <span class="mi">0</span><span class="p">.</span><span class="mi">00029000519225035683</span>
+ <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">00040990027156403275</span>
+ <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">5854922351490612</span>    
 </pre></div>
 
 
@@ -581,7 +581,7 @@
 
 
 <p>[1] : Ch. Dellago <em>et al</em>, <a href="http://link.aps.org/doi/10.1103/PhysRevE.53.1485">Phys. Rev. E <strong>53</strong> (1996)</a></p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/66cccdf39347ffbf9cdfd83a841a25efb1b85a8e/src/lyapunov_spectrum.jl#L348-L379' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/38e748b9cd6ad08126b980fcd395d01c7b2ecea6/src/lyapunov_spectrum.jl#L348-L379' class='documenter-source'>source</a><br></p>
 <hr />
 <p>For example, lets plot the evolution of the perturbation growth using different colors for collisions with walls and disks in the Sinai billiard:</p>
 <div class="codehilite"><pre><span></span><span class="k">using</span> <span class="n">DynamicalBilliards</span><span class="p">,</span> <span class="n">PyPlot</span><span class="p">,</span> <span class="n">LinearAlgebra</span>

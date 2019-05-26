@@ -561,7 +561,7 @@
 </ul>
 <p>Notice that this function returns the <em>local</em> arclength. To get the global arclength parameterizing an entire billiard, simply do <code>ξ += arcintervals(bd)[i]</code> if the index of obstacle <code>o</code> is <code>i</code>.</p>
 <p>See also <a href="./#DynamicalBilliards.from_bcoords"><code>from_bcoords</code></a>, which is the inverse function.</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/66cccdf39347ffbf9cdfd83a841a25efb1b85a8e/src/boundary/boundarymap.jl#L38-L61' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/38e748b9cd6ad08126b980fcd395d01c7b2ecea6/src/boundary/boundarymap.jl#L38-L61' class='documenter-source'>source</a><br></p>
 <p><a id='DynamicalBilliards.from_bcoords' href='#DynamicalBilliards.from_bcoords'>#</a>
 <strong><code>DynamicalBilliards.from_bcoords</code></strong> &mdash; <em>Function</em>.</p>
 <div class="codehilite"><pre><span></span><span class="n">from_bcoords</span><span class="p">(</span><span class="n">ξ</span><span class="p">,</span> <span class="n">sφ</span><span class="p">,</span> <span class="n">o</span><span class="o">::</span><span class="n">Obstacle</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pos</span><span class="p">,</span> <span class="n">vel</span>
@@ -571,13 +571,13 @@
 <p>Convert the boundary coordinates <code>ξ, sφ</code> on the obstacle to real coordinates <code>pos, vel</code>.</p>
 <p>Note that <code>vel</code> always points away from the obstacle.</p>
 <p>This function is the inverse of <a href="./#DynamicalBilliards.to_bcoords"><code>to_bcoords</code></a>.</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/66cccdf39347ffbf9cdfd83a841a25efb1b85a8e/src/boundary/boundarymap.jl#L99-L107' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/38e748b9cd6ad08126b980fcd395d01c7b2ecea6/src/boundary/boundarymap.jl#L99-L107' class='documenter-source'>source</a><br></p>
 <div class="codehilite"><pre><span></span><span class="n">from_bcoords</span><span class="p">(</span><span class="err">ξ</span><span class="p">,</span> <span class="n">s</span><span class="err">φ</span><span class="p">,</span> <span class="n">bd</span><span class="p">::</span><span class="n">Billiard</span><span class="p">,</span> <span class="n">intervals</span> <span class="o">=</span> <span class="n">arcintervals</span><span class="p">(</span><span class="n">bd</span><span class="p">))</span>
 </pre></div>
 
 
 <p>Same as above, but now <code>ξ</code> is considered to be the global arclength, parameterizing the entire billiard, instead of a single obstacle.</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/66cccdf39347ffbf9cdfd83a841a25efb1b85a8e/src/boundary/boundarymap.jl#L139-L143' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/38e748b9cd6ad08126b980fcd395d01c7b2ecea6/src/boundary/boundarymap.jl#L139-L143' class='documenter-source'>source</a><br></p>
 <p><a id='DynamicalBilliards.arcintervals' href='#DynamicalBilliards.arcintervals'>#</a>
 <strong><code>DynamicalBilliards.arcintervals</code></strong> &mdash; <em>Function</em>.</p>
 <div class="codehilite"><pre><span></span><span class="n">arcintervals</span><span class="p">(</span><span class="n">bd</span><span class="o">::</span><span class="n">Billiard</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">s</span>
@@ -587,7 +587,7 @@
 <p>Generate a vector <code>s</code>, with entries being the delimiters of the arclengths of the obstacles of the billiard. The arclength from <code>s[i]</code> to <code>s[i+1]</code> is the arclength spanned by the <code>i</code>th obstacle.</p>
 <p><code>s</code> is used to transform an arc-coordinate <code>ξ</code> from local to global and vice-versa. A local <code>ξ</code> becomes global by adding <code>s[i]</code> (where <code>i</code> is the index of current obstacle). A global <code>ξ</code> becomes local by subtracting <code>s[i]</code>.</p>
 <p>See also <a href="./#DynamicalBilliards.boundarymap"><code>boundarymap</code></a>, <a href="./#DynamicalBilliards.to_bcoords"><code>to_bcoords</code></a>, <a href="./#DynamicalBilliards.from_bcoords"><code>from_bcoords</code></a>.</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/66cccdf39347ffbf9cdfd83a841a25efb1b85a8e/src/boundary/boundarymap.jl#L17-L29' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/38e748b9cd6ad08126b980fcd395d01c7b2ecea6/src/boundary/boundarymap.jl#L17-L29' class='documenter-source'>source</a><br></p>
 <p><a id='Boundary-Maps-1'></a></p>
 <h2 id="boundary-maps">Boundary Maps</h2>
 <p>Boundary maps can be obtained with the high level function</p>
@@ -603,7 +603,7 @@
 <p>The returned values of this function can be used in conjuction with the function <a href="../../visualizing/#DynamicalBilliards.plot_boundarymap"><code>plot_boundarymap</code></a> (requires <code>using PyPlot</code>) to plot the boundary map in an intuitive way.</p>
 <p><em>Notice</em> - this function only works for normal specular reflection. Random reflections or ray-splitting will give unexpected results.</p>
 <p>See also <a href="./#DynamicalBilliards.to_bcoords"><code>to_bcoords</code></a>, <a href="./#DynamicalBilliards.boundarymap_portion"><code>boundarymap_portion</code></a>. See <a href="../high_level/#DynamicalBilliards.parallelize"><code>parallelize</code></a> for a parallelized version.</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/66cccdf39347ffbf9cdfd83a841a25efb1b85a8e/src/boundary/boundarymap.jl#L160-L183' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/38e748b9cd6ad08126b980fcd395d01c7b2ecea6/src/boundary/boundarymap.jl#L160-L183' class='documenter-source'>source</a><br></p>
 <hr />
 <p>For example, take a look at boundary maps of the mushroom billiard, which is known to have a mixed phase space:</p>
 <div class="codehilite"><pre><span></span><span class="k">using</span> <span class="n">DynamicalBilliards</span><span class="p">,</span> <span class="n">PyPlot</span>
@@ -647,7 +647,7 @@
 <p>Calculate the portion of the boundary map of the billiard <code>bd</code> covered by the particle <code>p</code> when it is evolved for time <code>t</code> (float or integer). Notice that the</p>
 <p>The boundary map is partitioned into boxes of size <code>(δξ, δφ)</code> and as the particle evolves visited boxes are counted. The returned ratio is this count divided by the total boxes of size <code>(δξ, δφ)</code> needed to cover the boundary map.</p>
 <p><strong>Important:</strong> This portion <strong>does not</strong> equate the portion the particle's orbit covers on the full, three dimensional phase space. Use the function <a href="./#DynamicalBilliards.phasespace_portion"><code>phasespace_portion</code></a> for that!</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/66cccdf39347ffbf9cdfd83a841a25efb1b85a8e/src/boundary/phasespacetools.jl#L12-L24' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/38e748b9cd6ad08126b980fcd395d01c7b2ecea6/src/boundary/phasespacetools.jl#L12-L24' class='documenter-source'>source</a><br></p>
 <p><a id='DynamicalBilliards.phasespace_portion' href='#DynamicalBilliards.phasespace_portion'>#</a>
 <strong><code>DynamicalBilliards.phasespace_portion</code></strong> &mdash; <em>Function</em>.</p>
 <div class="codehilite"><pre><span></span><span class="n">phasespace_portion</span><span class="p">(</span><span class="n">bd</span><span class="o">::</span><span class="n">Billiard</span><span class="p">,</span> <span class="n">t</span><span class="p">,</span> <span class="n">p</span><span class="o">::</span><span class="n">AbstractParticle</span><span class="p">,</span> <span class="n">δξ</span><span class="p">,</span> <span class="n">δφ</span> <span class="o">=</span> <span class="n">δξ</span><span class="p">)</span>
@@ -657,7 +657,7 @@
 <p>Calculate the portion of the phase space of the billiard <code>bd</code> covered by the particle <code>p</code> when it is evolved for time <code>t</code> (float or integer).</p>
 <p>This function extends <a href="./#DynamicalBilliards.boundarymap_portion"><code>boundarymap_portion</code></a> using a novel approach. For each visited box of the boundary map, <a href="../high_level/#DynamicalBilliards.bounce!"><code>bounce!</code></a> attributes a third dimension (the collision time, equal to collision distance) which expands the two dimensions of the boundary map to the three dimensions of the phase space.</p>
 <p>The true phase space portion is then the weighted portion of boxes visited by the particle, divided by the total weighted sum of boxes. The weights of the boxes are the collision times.</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/66cccdf39347ffbf9cdfd83a841a25efb1b85a8e/src/boundary/phasespacetools.jl#L64-L77' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/38e748b9cd6ad08126b980fcd395d01c7b2ecea6/src/boundary/phasespacetools.jl#L64-L77' class='documenter-source'>source</a><br></p>
 <hr />
 <p>For example, for mushroom billiards the ratio of the chaotic-to-total phase space is known <strong>analytically</strong> for both the full 3D [1] space as well as the boundary 2D [2] space:</p>
 <div>
@@ -694,8 +694,8 @@
 </pre></div>
 
 
-<div class="codehilite"><pre><span></span><span class="mi">2</span><span class="n">D</span> <span class="nb">numeric</span> <span class="o">-</span> <span class="n">theory</span><span class="p">:</span> <span class="mi">0</span><span class="p">.</span><span class="mi">00034806767260525673</span>
-<span class="mi">3</span><span class="n">D</span> <span class="nb">numeric</span> <span class="o">-</span> <span class="n">theory</span><span class="p">:</span> <span class="mi">0</span><span class="p">.</span><span class="mi">0011661523166008325</span>
+<div class="codehilite"><pre><span></span><span class="mi">2</span><span class="n">D</span> <span class="nb">numeric</span> <span class="o">-</span> <span class="n">theory</span><span class="p">:</span> <span class="mi">5</span><span class="p">.</span><span class="mi">410329947941328</span><span class="n">e</span><span class="o">-</span><span class="mi">6</span>
+<span class="mi">3</span><span class="n">D</span> <span class="nb">numeric</span> <span class="o">-</span> <span class="n">theory</span><span class="p">:</span> <span class="mi">0</span><span class="p">.</span><span class="mi">0010606027949252028</span>
 </pre></div>
 
 
