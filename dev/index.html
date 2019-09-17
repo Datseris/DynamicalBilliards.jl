@@ -284,13 +284,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-to-easily-code-a-billiard" title="How to easily code a Billiard" class="md-nav__link">
-    How to easily code a Billiard
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#citing" title="Citing" class="md-nav__link">
     Citing
   </a>
@@ -314,6 +307,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-easily-code-a-billiard" title="How to easily code a Billiard" class="md-nav__link">
+    How to easily code a Billiard
+  </a>
   
 </li>
       
@@ -531,13 +531,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-to-easily-code-a-billiard" title="How to easily code a Billiard" class="md-nav__link">
-    How to easily code a Billiard
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#citing" title="Citing" class="md-nav__link">
     Citing
   </a>
@@ -561,6 +554,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-easily-code-a-billiard" title="How to easily code a Billiard" class="md-nav__link">
+    How to easily code a Billiard
+  </a>
   
 </li>
       
@@ -641,13 +641,9 @@
 <li>Brutal tests that confirm the package works and overcomes numerical precision issues.</li>
 </ul>
 <p>This package does not support finite-sized particles and, as a result, there is also no support for collision between particles.</p>
-<p><a id='How-to-easily-code-a-Billiard-1'></a></p>
-<h2 id="how-to-easily-code-a-billiard">How to easily code a Billiard</h2>
-<p>We have created a <a href="https://nbviewer.jupyter.org/github/JuliaDynamics/JuliaDynamics/blob/master/tutorials/Billiards%20Example/billiards_example.ipynb">Jupyter notebook</a> that showcases how easy it is to simulate a dynamical billiard using Julia. This <a href="https://nbviewer.jupyter.org/github/JuliaDynamics/JuliaDynamics/blob/master/tutorials/Billiards%20Example/billiards_example.ipynb">notebook</a> is an educative example of both using Multiple Dispatch and of how the internal code of <code>DynamicalBilliards</code> works. It also highlights the extendibility of the core code.</p>
-<p>Besides a Jupyter notebook, this tutorial is also available as an interactive article in the new platform NextJournal <a href="https://nextjournal.com/julia/billiard">here</a>.</p>
 <p><a id='Citing-1'></a></p>
 <h2 id="citing">Citing</h2>
-<p>If you have used this package for research that resulted in a publication, please be kind enough to cite the paper associated with <code>DynamicalBilliards</code>. The DOI is https://doi.org/10.21105/joss.00458 and you can cite as:</p>
+<p>If you have used this package for research that resulted in a publication, please be kind enough to cite the software paper associated with <code>DynamicalBilliards</code>. The DOI is https://doi.org/10.21105/joss.00458 and you can cite as:</p>
 <blockquote>
 <p>G. Datseris, [The Journal of Open Source Software <strong>2</strong>, 458</p>
 </blockquote>
@@ -668,6 +664,24 @@
 </pre></div>
 
 
+<p>In addition, if you are using the functionality to compute Lyapunov exponents in billiards, then please cite the following Chaos publication:</p>
+<div class="codehilite"><pre><span></span><span class="nv">@article</span><span class="err">{</span><span class="n">Datseris2019</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">doi</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">{</span><span class="mf">10.1063</span><span class="o">/</span><span class="mf">1.5099446</span><span class="err">}</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">{</span><span class="nl">https</span><span class="p">:</span><span class="o">//</span><span class="n">doi</span><span class="p">.</span><span class="n">org</span><span class="o">/</span><span class="mf">10.1063</span><span class="o">/</span><span class="mf">1.5099446</span><span class="err">}</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nf">year</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">{</span><span class="mi">2019</span><span class="err">}</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nf">month</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sep</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">publisher</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">{{</span><span class="n">AIP</span><span class="err">}</span><span class="w"> </span><span class="n">Publishing</span><span class="err">}</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">volume</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">{</span><span class="mi">29</span><span class="err">}</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">number</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">{</span><span class="mi">9</span><span class="err">}</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">pages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">{</span><span class="mi">093115</span><span class="err">}</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">author</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">{</span><span class="n">George</span><span class="w"> </span><span class="n">Datseris</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">Lukas</span><span class="w"> </span><span class="n">Hupe</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">Ragnar</span><span class="w"> </span><span class="n">Fleischmann</span><span class="err">}</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">{</span><span class="n">Estimating</span><span class="w"> </span><span class="n">Lyapunov</span><span class="w"> </span><span class="n">exponents</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">billiards</span><span class="err">}</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">journal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">{</span><span class="nl">Chaos</span><span class="p">:</span><span class="w"> </span><span class="n">An</span><span class="w"> </span><span class="n">Interdisciplinary</span><span class="w"> </span><span class="n">Journal</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">Nonlinear</span><span class="w"> </span><span class="n">Science</span><span class="err">}</span><span class="w"></span>
+<span class="err">}</span><span class="w"></span>
+</pre></div>
+
+
+<hr />
 <p><a id='Installation-1'></a></p>
 <h2 id="installation">Installation</h2>
 <p>This package is registered, simply use <code>]</code> to get into the package manager mode and then type <code>add DynamicalBilliards</code> to install it. The <a href="https://juliadynamics.github.io/DynamicalBilliards.jl/stable/">stable documentation</a> accompanies the version installed with <code>add</code>.</p>
@@ -676,6 +690,11 @@
 <h3 id="plotting">Plotting</h3>
 <p>Plotting is done through the <code>PyPlot</code> module. All plotting functions are brought into scope when <code>using PyPlot</code> is done.</p>
 <p>In addition, for animations using the function <a href="visualizing/#DynamicalBilliards.animate_evolution"><code>animate_evolution</code></a> the <code>ffmpeg</code> software must be accessible from the command line.</p>
+<hr />
+<p><a id='How-to-easily-code-a-Billiard-1'></a></p>
+<h2 id="how-to-easily-code-a-billiard">How to easily code a Billiard</h2>
+<p>We have created a <a href="https://nbviewer.jupyter.org/github/JuliaDynamics/JuliaDynamics/blob/master/tutorials/Billiards%20Example/billiards_example.ipynb">Jupyter notebook</a> that showcases how easy it is to simulate a dynamical billiard using Julia. This <a href="https://nbviewer.jupyter.org/github/JuliaDynamics/JuliaDynamics/blob/master/tutorials/Billiards%20Example/billiards_example.ipynb">notebook</a> is an educative example of both using Multiple Dispatch and of how the internal code of <code>DynamicalBilliards</code> works. It also highlights the extendibility of the core code.</p>
+<p>Besides a Jupyter notebook, this tutorial is also available as an interactive article in the new platform NextJournal <a href="https://nextjournal.com/julia/billiard">here</a>.</p>
 <hr />
 <p><a id='Support-1'></a></p>
 <h2 id="support">Support</h2>
