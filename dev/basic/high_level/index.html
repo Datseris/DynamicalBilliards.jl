@@ -683,8 +683,8 @@
 
 
 <div class="codehilite"><pre><span></span><span class="n">Particle</span><span class="err">{</span><span class="n">Float64</span><span class="err">}</span>
-<span class="k">position</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">981895</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">588597</span><span class="p">]</span>
-<span class="n">velocity</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">961148</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">276035</span><span class="p">]</span>
+<span class="k">position</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">876384</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">530831</span><span class="p">]</span>
+<span class="n">velocity</span><span class="p">:</span> <span class="p">[</span><span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">180475</span><span class="p">,</span> <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">98358</span><span class="p">]</span>
 </pre></div>
 
 
@@ -695,8 +695,8 @@
 
 
 <div class="codehilite"><pre><span></span><span class="n">MagneticParticle</span><span class="err">{</span><span class="n">Float64</span><span class="err">}</span>
-<span class="k">position</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">981895</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">588597</span><span class="p">]</span>
-<span class="n">velocity</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">961148</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">276035</span><span class="p">]</span>
+<span class="k">position</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">876384</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">530831</span><span class="p">]</span>
+<span class="n">velocity</span><span class="p">:</span> <span class="p">[</span><span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">180475</span><span class="p">,</span> <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">98358</span><span class="p">]</span>
 <span class="n">ang</span><span class="p">.</span> <span class="n">velocity</span><span class="p">:</span> <span class="mi">0</span><span class="p">.</span><span class="mi">5</span>
 </pre></div>
 
@@ -720,7 +720,7 @@
 
 <p>Return a particle with random allowed initial conditions inside the given billiard. If supplied with a second argument the type of the returned particle is <code>MagneticParticle</code>, with angular velocity <code>ω</code>.</p>
 <p><strong>WARNING</strong> : <code>randominside</code> works for any <strong>convex</strong> billiard but it does not work for non-convex billiards. (this is because it uses <code>distance</code>)</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/b370c6dfd47511693ee2e32178e6218c1527d022/src/billiards/billiardtable.jl#L124-L132' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/210dbadea43ec4e5a2890b6b2567a8d04346c78c/src/billiards/billiardtable.jl#L124-L132' class='documenter-source'>source</a><br></p>
 <hr />
 <p>For example:</p>
 <div class="codehilite"><pre><span></span><span class="n">p</span> <span class="o">=</span> <span class="n">randominside</span><span class="p">(</span><span class="n">bd</span><span class="p">)</span>
@@ -728,8 +728,8 @@
 
 
 <div class="codehilite"><pre><span></span><span class="n">Particle</span><span class="err">{</span><span class="n">Float64</span><span class="err">}</span>
-<span class="k">position</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">.</span><span class="mi">20228</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">910296</span><span class="p">]</span>
-<span class="n">velocity</span><span class="p">:</span> <span class="p">[</span><span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">80791</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">589306</span><span class="p">]</span>
+<span class="k">position</span><span class="p">:</span> <span class="p">[</span><span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">410443</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">325212</span><span class="p">]</span>
+<span class="n">velocity</span><span class="p">:</span> <span class="p">[</span><span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">0973197</span><span class="p">,</span> <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">995253</span><span class="p">]</span>
 </pre></div>
 
 
@@ -739,8 +739,8 @@
 
 
 <div class="codehilite"><pre><span></span><span class="n">MagneticParticle</span><span class="err">{</span><span class="n">Float64</span><span class="err">}</span>
-<span class="k">position</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">530651</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">23351</span><span class="p">]</span>
-<span class="n">velocity</span><span class="p">:</span> <span class="p">[</span><span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">647523</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">762046</span><span class="p">]</span>
+<span class="k">position</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">349983</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">8828</span><span class="p">]</span>
+<span class="n">velocity</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">912457</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">409173</span><span class="p">]</span>
 <span class="n">ang</span><span class="p">.</span> <span class="n">velocity</span><span class="p">:</span> <span class="mi">0</span><span class="p">.</span><span class="mi">5</span>
 </pre></div>
 
@@ -772,7 +772,7 @@
 
 
 <p>To implement ray-splitting, the <code>evolve!</code> function is supplemented with a fourth argument, <code>raysplitters</code> which is a tuple of <a href="../../ray-splitting/#DynamicalBilliards.RaySplitter"><code>RaySplitter</code></a> instances. Notice that <code>evolve</code> <strong>always mutates the billiard</strong> if ray-splitting is used! For more information and instructions on using ray-splitting please visit the official documentation.</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/b370c6dfd47511693ee2e32178e6218c1527d022/src/timeseries.jl#L6-L40' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/210dbadea43ec4e5a2890b6b2567a8d04346c78c/src/timeseries.jl#L6-L40' class='documenter-source'>source</a><br></p>
 <hr />
 <p>Forget the ray-splitting part for now (see <a href="../../ray-splitting">Ray-Splitting</a>).</p>
 <p>Let's see an example:</p>
@@ -783,11 +783,11 @@
 </pre></div>
 
 
-<div class="codehilite"><pre><span></span><span class="mi">0</span><span class="p">.</span><span class="mi">0</span>  <span class="p">[</span><span class="mi">1</span><span class="p">.</span><span class="mi">20228</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">910296</span><span class="p">]</span>  <span class="p">[</span><span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">80791</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">589306</span><span class="p">]</span>
-<span class="mi">0</span><span class="p">.</span><span class="mi">138</span>  <span class="p">[</span><span class="mi">1</span><span class="p">.</span><span class="mi">09066</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">991712</span><span class="p">]</span>  <span class="p">[</span><span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">964948</span><span class="p">,</span> <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">262441</span><span class="p">]</span>
-<span class="mi">1</span><span class="p">.</span><span class="mi">645</span>  <span class="p">[</span><span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">496377</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">560081</span><span class="p">]</span>  <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">87447</span><span class="p">,</span> <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">48508</span><span class="p">]</span>
-<span class="mi">1</span><span class="p">.</span><span class="mi">155</span>  <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">513297</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">0</span><span class="p">]</span>  <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">87447</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">48508</span><span class="p">]</span>
-<span class="mi">1</span><span class="p">.</span><span class="mi">126</span>  <span class="p">[</span><span class="mi">1</span><span class="p">.</span><span class="mi">49787</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">546154</span><span class="p">]</span>  <span class="p">[</span><span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">948738</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">316064</span><span class="p">]</span>
+<div class="codehilite"><pre><span></span><span class="mi">0</span><span class="p">.</span><span class="mi">0</span>  <span class="p">[</span><span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">410443</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">325212</span><span class="p">]</span>  <span class="p">[</span><span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">0973197</span><span class="p">,</span> <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">995253</span><span class="p">]</span>
+<span class="mi">0</span><span class="p">.</span><span class="mi">097</span>  <span class="p">[</span><span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">419895</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">228545</span><span class="p">]</span>  <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">947483</span><span class="p">,</span> <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">319805</span><span class="p">]</span>
+<span class="mi">0</span><span class="p">.</span><span class="mi">715</span>  <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">257212</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">0</span><span class="p">]</span>  <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">947483</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">319805</span><span class="p">]</span>
+<span class="mi">1</span><span class="p">.</span><span class="mi">304</span>  <span class="p">[</span><span class="mi">1</span><span class="p">.</span><span class="mi">49309</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">417146</span><span class="p">]</span>  <span class="p">[</span><span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">790927</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">61191</span><span class="p">]</span>
+<span class="mi">0</span><span class="p">.</span><span class="mi">953</span>  <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">739718</span><span class="p">,</span> <span class="mi">1</span><span class="p">.</span><span class="mi">0</span><span class="p">]</span>  <span class="p">[</span><span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">790927</span><span class="p">,</span> <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">61191</span><span class="p">]</span>
 </pre></div>
 
 
@@ -799,16 +799,16 @@
 </pre></div>
 
 
-<div class="codehilite"><pre><span></span><span class="mi">0</span><span class="p">.</span><span class="mi">0</span>  <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">530651</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">23351</span><span class="p">]</span>  <span class="p">[</span><span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">647523</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">762046</span><span class="p">]</span>
-<span class="mi">1</span><span class="p">.</span><span class="mi">097</span>  <span class="p">[</span><span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">368237</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">838233</span><span class="p">]</span>  <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">392015</span><span class="p">,</span> <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">919959</span><span class="p">]</span>
-<span class="mi">1</span><span class="p">.</span><span class="mi">087</span>  <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">301953</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">0</span><span class="p">]</span>  <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">811132</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">584864</span><span class="p">]</span>
-<span class="mi">1</span><span class="p">.</span><span class="mi">258</span>  <span class="p">[</span><span class="mi">1</span><span class="p">.</span><span class="mi">03261</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">998935</span><span class="p">]</span>  <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">185332</span><span class="p">,</span> <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">982676</span><span class="p">]</span>
-<span class="mi">0</span><span class="p">.</span><span class="mi">896</span>  <span class="p">[</span><span class="mi">1</span><span class="p">.</span><span class="mi">38737</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">183857</span><span class="p">]</span>  <span class="p">[</span><span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">907785</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">419436</span><span class="p">]</span>
-<span class="mi">1</span><span class="p">.</span><span class="mi">807</span>  <span class="p">[</span><span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">358069</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">151021</span><span class="p">]</span>  <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">476049</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">879419</span><span class="p">]</span>
-<span class="mi">0</span><span class="p">.</span><span class="mi">874</span>  <span class="p">[</span><span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">120381</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">985292</span><span class="p">]</span>  <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">51863</span><span class="p">,</span> <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">854999</span><span class="p">]</span>
-<span class="mi">1</span><span class="p">.</span><span class="mi">688</span>  <span class="p">[</span><span class="mi">1</span><span class="p">.</span><span class="mi">22873</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">0553828</span><span class="p">]</span>  <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">425127</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">905134</span><span class="p">]</span>
-<span class="mi">0</span><span class="p">.</span><span class="mi">752</span>  <span class="p">[</span><span class="mi">1</span><span class="p">.</span><span class="mi">41449</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">779645</span><span class="p">]</span>  <span class="p">[</span><span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">949015</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">315232</span><span class="p">]</span>
-<span class="mi">2</span><span class="p">.</span><span class="mi">027</span>  <span class="p">[</span><span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">493612</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">420332</span><span class="p">]</span>  <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">931266</span><span class="p">,</span> <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">364341</span><span class="p">]</span>
+<div class="codehilite"><pre><span></span><span class="mi">0</span><span class="p">.</span><span class="mi">0</span>  <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">349983</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">8828</span><span class="p">]</span>  <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">912457</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">409173</span><span class="p">]</span>
+<span class="mi">0</span><span class="p">.</span><span class="mi">252</span>  <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">572653</span><span class="p">,</span> <span class="mi">1</span><span class="p">.</span><span class="mi">0</span><span class="p">]</span>  <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">853857</span><span class="p">,</span> <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">520508</span><span class="p">]</span>
+<span class="mi">0</span><span class="p">.</span><span class="mi">933</span>  <span class="p">[</span><span class="mi">1</span><span class="p">.</span><span class="mi">45176</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">714278</span><span class="p">]</span>  <span class="p">[</span><span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">567909</span><span class="p">,</span> <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">823091</span><span class="p">]</span>
+<span class="mi">0</span><span class="p">.</span><span class="mi">76</span>  <span class="p">[</span><span class="mi">1</span><span class="p">.</span><span class="mi">14782</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">0223509</span><span class="p">]</span>  <span class="p">[</span><span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">733915</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">679241</span><span class="p">]</span>
+<span class="mi">1</span><span class="p">.</span><span class="mi">783</span>  <span class="p">[</span><span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">498867</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">533646</span><span class="p">]</span>  <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">961251</span><span class="p">,</span> <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">275674</span><span class="p">]</span>
+<span class="mi">1</span><span class="p">.</span><span class="mi">911</span>  <span class="p">[</span><span class="mi">1</span><span class="p">.</span><span class="mi">30454</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">896552</span><span class="p">]</span>  <span class="p">[</span><span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">403624</span><span class="p">,</span> <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">914925</span><span class="p">]</span>
+<span class="mi">0</span><span class="p">.</span><span class="mi">902</span>  <span class="p">[</span><span class="mi">1</span><span class="p">.</span><span class="mi">13564</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">0187492</span><span class="p">]</span>  <span class="p">[</span><span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">491797</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">87071</span><span class="p">]</span>
+<span class="mi">1</span><span class="p">.</span><span class="mi">643</span>  <span class="p">[</span><span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">139698</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">980088</span><span class="p">]</span>  <span class="p">[</span><span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">695605</span><span class="p">,</span> <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">718424</span><span class="p">]</span>
+<span class="mi">0</span><span class="p">.</span><span class="mi">628</span>  <span class="p">[</span><span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">499009</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">468542</span><span class="p">]</span>  <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">549133</span><span class="p">,</span> <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">835735</span><span class="p">]</span>
+<span class="mi">0</span><span class="p">.</span><span class="mi">628</span>  <span class="p">[</span><span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">0783013</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">00616916</span><span class="p">]</span>  <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">935502</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">353322</span><span class="p">]</span>
 </pre></div>
 
 
@@ -837,7 +837,7 @@
 
 
 <p>To implement ray-splitting, the <code>timeseries!</code> function is supplemented with a fourth argument, <code>raysplitters</code> which is a tuple of <a href="../../ray-splitting/#DynamicalBilliards.RaySplitter"><code>RaySplitter</code></a> instances. Notice that <code>timeseries</code> <strong>always mutates the billiard</strong> if ray-splitting is used! For more information and instructions on using ray-splitting please visit the official documentation.</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/b370c6dfd47511693ee2e32178e6218c1527d022/src/timeseries.jl#L167-L201' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/210dbadea43ec4e5a2890b6b2567a8d04346c78c/src/timeseries.jl#L167-L201' class='documenter-source'>source</a><br></p>
 <hr />
 <p>For example:</p>
 <div class="codehilite"><pre><span></span><span class="n">xt</span><span class="p">,</span> <span class="n">yt</span><span class="p">,</span> <span class="n">vxt</span><span class="p">,</span> <span class="n">vyt</span><span class="p">,</span> <span class="n">t</span> <span class="o">=</span> <span class="n">timeseries</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">bd</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
@@ -848,11 +848,11 @@
 
 
 <div class="codehilite"><pre><span></span><span class="mi">5</span><span class="err">×</span><span class="mi">5</span> <span class="nb">Array</span><span class="err">{</span><span class="n">Float64</span><span class="p">,</span><span class="mi">2</span><span class="err">}</span><span class="p">:</span>
-  <span class="mi">1</span><span class="p">.</span><span class="mi">20228</span>   <span class="mi">0</span><span class="p">.</span><span class="mi">910296</span>  <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">80791</span>    <span class="mi">0</span><span class="p">.</span><span class="mi">589306</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">0</span>     
-  <span class="mi">1</span><span class="p">.</span><span class="mi">09066</span>   <span class="mi">0</span><span class="p">.</span><span class="mi">991712</span>  <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">964948</span>  <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">262441</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">138157</span>
- <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">496377</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">560081</span>   <span class="mi">0</span><span class="p">.</span><span class="mi">87447</span>   <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">48508</span>   <span class="mi">1</span><span class="p">.</span><span class="mi">78284</span> 
-  <span class="mi">0</span><span class="p">.</span><span class="mi">513297</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">0</span>        <span class="mi">0</span><span class="p">.</span><span class="mi">87447</span>    <span class="mi">0</span><span class="p">.</span><span class="mi">48508</span>   <span class="mi">2</span><span class="p">.</span><span class="mi">93746</span> 
-  <span class="mi">1</span><span class="p">.</span><span class="mi">49787</span>   <span class="mi">0</span><span class="p">.</span><span class="mi">546154</span>  <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">948738</span>   <span class="mi">0</span><span class="p">.</span><span class="mi">316064</span>  <span class="mi">4</span><span class="p">.</span><span class="mi">06336</span> 
+ <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">410443</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">325212</span>  <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">0973197</span>  <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">995253</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">0</span>      
+ <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">419895</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">228545</span>   <span class="mi">0</span><span class="p">.</span><span class="mi">947483</span>   <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">319805</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">0971288</span>
+  <span class="mi">0</span><span class="p">.</span><span class="mi">257212</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">0</span>        <span class="mi">0</span><span class="p">.</span><span class="mi">947483</span>    <span class="mi">0</span><span class="p">.</span><span class="mi">319805</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">811766</span> 
+  <span class="mi">1</span><span class="p">.</span><span class="mi">49309</span>   <span class="mi">0</span><span class="p">.</span><span class="mi">417146</span>  <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">790927</span>    <span class="mi">0</span><span class="p">.</span><span class="mi">61191</span>   <span class="mi">2</span><span class="p">.</span><span class="mi">11614</span>  
+  <span class="mi">0</span><span class="p">.</span><span class="mi">739718</span>  <span class="mi">1</span><span class="p">.</span><span class="mi">0</span>       <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">790927</span>   <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">61191</span>   <span class="mi">3</span><span class="p">.</span><span class="mi">06866</span>  
 </pre></div>
 
 
@@ -866,11 +866,11 @@
 
 
 <div class="codehilite"><pre><span></span><span class="mi">5</span><span class="err">×</span><span class="mi">5</span> <span class="nb">Array</span><span class="err">{</span><span class="n">Float64</span><span class="p">,</span><span class="mi">2</span><span class="err">}</span><span class="p">:</span>
- <span class="mi">0</span><span class="p">.</span><span class="mi">530651</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">23351</span>   <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">647523</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">762046</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">0</span> 
- <span class="mi">0</span><span class="p">.</span><span class="mi">524157</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">241114</span>  <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">651325</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">758799</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">01</span>
- <span class="mi">0</span><span class="p">.</span><span class="mi">517625</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">248686</span>  <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">655111</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">755533</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">02</span>
- <span class="mi">0</span><span class="p">.</span><span class="mi">511055</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">256225</span>  <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">65888</span>   <span class="mi">0</span><span class="p">.</span><span class="mi">752248</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">03</span>
- <span class="mi">0</span><span class="p">.</span><span class="mi">504447</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">263731</span>  <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">662633</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">748944</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">04</span>
+ <span class="mi">0</span><span class="p">.</span><span class="mi">349983</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">8828</span>    <span class="mi">0</span><span class="p">.</span><span class="mi">912457</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">409173</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">0</span> 
+ <span class="mi">0</span><span class="p">.</span><span class="mi">359098</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">886915</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">910399</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">41373</span>   <span class="mi">0</span><span class="p">.</span><span class="mi">01</span>
+ <span class="mi">0</span><span class="p">.</span><span class="mi">368191</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">891075</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">908319</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">418277</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">02</span>
+ <span class="mi">0</span><span class="p">.</span><span class="mi">377264</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">89528</span>   <span class="mi">0</span><span class="p">.</span><span class="mi">906217</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">422814</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">03</span>
+ <span class="mi">0</span><span class="p">.</span><span class="mi">386316</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">899531</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">904091</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">427339</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">04</span>
 </pre></div>
 
 
@@ -888,7 +888,7 @@
 </ul>
 <p>The first entries are <code>0.0</code> and <code>0</code>. Similarly with <a href="./#DynamicalBilliards.evolve!"><code>evolve!</code></a> the function does not record collisions with periodic walls.</p>
 <p>Currently does not support raysplitting. Returns empty arrays for pinned particles.</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/b370c6dfd47511693ee2e32178e6218c1527d022/src/timeseries.jl#L115-L130' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/210dbadea43ec4e5a2890b6b2567a8d04346c78c/src/timeseries.jl#L115-L130' class='documenter-source'>source</a><br></p>
 <div class="admonition note">
 <p class="admonition-title">Type of <code>t</code></p>
 <p>Remember that the behavior of time evolution depends on the type of the <code>t</code> argument, which represents "total amount". If it is <code>AbstractFloat</code>, it represents total amount of time, but if it is <code>Int</code> it represents total number of collisions.</p>
@@ -911,7 +911,7 @@
 </ul>
 <p>Return the positions <code>poss</code> and velocities <code>vels</code> at the instances of crossing the <code>plane</code>. If given more than one particle, the result is a vector of vectors of vectors.</p>
 <p><em>Notice</em> - This function can handle pinned particles. If a pinned particle can intersect with the <code>plane</code>, then an intersection is returned. If however it can't then empty vectors are returned.</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/b370c6dfd47511693ee2e32178e6218c1527d022/src/poincare.jl#L3-L24' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/210dbadea43ec4e5a2890b6b2567a8d04346c78c/src/poincare.jl#L3-L24' class='documenter-source'>source</a><br></p>
 <hr />
 <p>For example, the surface of section in the periodic Sinai billiard with magnetic field reveals the mixed nature of the phase-space:</p>
 <div class="codehilite"><pre><span></span><span class="k">using</span> <span class="n">DynamicalBilliards</span><span class="p">,</span> <span class="n">PyPlot</span>
@@ -966,7 +966,7 @@
 <p>If the particle evolves for more than <code>t</code> (integer or float) without colliding with the <code>Door</code> (i.e. escaping) the returned result is <code>Inf</code>.</p>
 <p>A warning can be thrown if the result is <code>Inf</code>. Enable this using the keyword <code>warning = true</code>.</p>
 <p>If a particle is not given, a random one is picked through <a href="./#DynamicalBilliards.randominside"><code>randominside</code></a>. See <a href="./#DynamicalBilliards.parallelize"><code>parallelize</code></a> for a parallelized version.</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/b370c6dfd47511693ee2e32178e6218c1527d022/src/timeevolution/highleveltimes.jl#L7-L22' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/210dbadea43ec4e5a2890b6b2567a8d04346c78c/src/timeevolution/highleveltimes.jl#L7-L22' class='documenter-source'>source</a><br></p>
 <div class="admonition tip">
 <p class="admonition-title">Creating a door</p>
 <p>To create a "door" simply visit the <a href="../library">library page</a> to learn more about the individual obstacle types (specifically <a href="../../tutorials/billiard_table/#DynamicalBilliards.FiniteWall"><code>FiniteWall</code></a>). To be able to combine them into a <a href="../../tutorials/billiard_table/#DynamicalBilliards.Billiard"><code>Billiard</code></a> you should also check out the tutorial on <a href="../tutorials/billiard_table">defining your own billiard</a>.</p>
@@ -990,8 +990,8 @@
 <span class="err">┌</span><span class="w"> </span><span class="nl">Warning</span><span class="p">:</span><span class="w"> </span><span class="err">`</span><span class="nl">a</span><span class="p">:</span><span class="err">:</span><span class="n">StaticArray</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nl">b</span><span class="p">:</span><span class="err">:</span><span class="n">Number</span><span class="err">`</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">deprecated</span><span class="p">,</span><span class="w"> </span><span class="k">use</span><span class="w"> </span><span class="err">`</span><span class="n">a</span><span class="w"> </span><span class="p">.</span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="err">`</span><span class="w"> </span><span class="n">instead</span><span class="p">.</span><span class="w"></span>
 <span class="err">│</span><span class="w">   </span><span class="n">caller</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cellsize</span><span class="w"> </span><span class="k">at</span><span class="w"> </span><span class="n">obstacles</span><span class="p">.</span><span class="nl">jl</span><span class="p">:</span><span class="mi">543</span><span class="w"> </span><span class="o">[</span><span class="n">inlined</span><span class="o">]</span><span class="w"></span>
 <span class="err">└</span><span class="w"> </span><span class="err">@</span><span class="w"> </span><span class="n">Core</span><span class="w"> </span><span class="o">~/</span><span class="n">build</span><span class="o">/</span><span class="n">JuliaDynamics</span><span class="o">/</span><span class="n">DynamicalBilliards</span><span class="p">.</span><span class="n">jl</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">billiards</span><span class="o">/</span><span class="n">obstacles</span><span class="p">.</span><span class="nl">jl</span><span class="p">:</span><span class="mi">543</span><span class="w"></span>
-<span class="k">Out</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="mi">100</span><span class="w"> </span><span class="n">particles</span><span class="p">,</span><span class="w"> </span><span class="mi">32</span><span class="w"> </span><span class="n">escaped</span><span class="w"></span>
-<span class="n">Mean</span><span class="w"> </span><span class="k">escape</span><span class="w"> </span><span class="nc">time</span><span class="w"> </span><span class="n">was</span><span class="w"> </span><span class="mf">5.01715667814236</span><span class="w"></span>
+<span class="k">Out</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="mi">100</span><span class="w"> </span><span class="n">particles</span><span class="p">,</span><span class="w"> </span><span class="mi">28</span><span class="w"> </span><span class="n">escaped</span><span class="w"></span>
+<span class="n">Mean</span><span class="w"> </span><span class="k">escape</span><span class="w"> </span><span class="nc">time</span><span class="w"> </span><span class="n">was</span><span class="w"> </span><span class="mf">5.885373337070496</span><span class="w"></span>
 </pre></div>
 
 
@@ -1000,7 +1000,7 @@
 </pre></div>
 
 
-<div class="codehilite"><pre><span></span><span class="mi">1</span><span class="p">.</span><span class="mi">7517435896104747</span>
+<div class="codehilite"><pre><span></span><span class="mi">40</span><span class="p">.</span><span class="mi">943959891075785</span>
 </pre></div>
 
 
@@ -1016,14 +1016,14 @@
 <p>Compute the mean collision time <code>κ</code> of the particle <code>p</code> in the billiard <code>bd</code> by evolving for total amount <code>t</code> (either float for time or integer for collision number).</p>
 <p>Collision times are counted only between obstacles that are <em>not</em> <a href="../../tutorials/billiard_table/#DynamicalBilliards.PeriodicWall"><code>PeriodicWall</code></a>.</p>
 <p>If a particle is not given, a random one is picked through <a href="./#DynamicalBilliards.randominside"><code>randominside</code></a>. See <a href="./#DynamicalBilliards.parallelize"><code>parallelize</code></a> for a parallelized version.</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/b370c6dfd47511693ee2e32178e6218c1527d022/src/timeevolution/highleveltimes.jl#L102-L112' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/210dbadea43ec4e5a2890b6b2567a8d04346c78c/src/timeevolution/highleveltimes.jl#L102-L112' class='documenter-source'>source</a><br></p>
 <p>For example,</p>
 <div class="codehilite"><pre><span></span><span class="n">bd</span> <span class="o">=</span> <span class="n">billiard_sinai</span><span class="p">()</span>
 <span class="n">meancollisiontime</span><span class="p">(</span><span class="n">randominside</span><span class="p">(</span><span class="n">bd</span><span class="p">),</span> <span class="n">bd</span><span class="p">,</span> <span class="mf">10000.0</span><span class="p">)</span>
 </pre></div>
 
 
-<div class="codehilite"><pre><span></span><span class="mi">0</span><span class="p">.</span><span class="mi">4559239013562561</span>
+<div class="codehilite"><pre><span></span><span class="mi">0</span><span class="p">.</span><span class="mi">4606472549365589</span>
 </pre></div>
 
 
@@ -1048,7 +1048,7 @@
 <li><a href="../../lyapunovs/#DynamicalBilliards.lyapunovspectrum"><code>lyapunovspectrum</code></a> (returns only the maximal exponents)</li>
 <li><a href="../phasespaces/#DynamicalBilliards.boundarymap"><code>boundarymap</code></a> (returns vector of vectors of 2-vectors <em>and</em> <code>arcintervals</code>)</li>
 </ul>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/b370c6dfd47511693ee2e32178e6218c1527d022/src/parallel.jl#L9-L25' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/210dbadea43ec4e5a2890b6b2567a8d04346c78c/src/parallel.jl#L9-L25' class='documenter-source'>source</a><br></p>
 <hr />
 <p>Here are some examples</p>
 <div class="codehilite"><pre><span></span><span class="n">bd</span> <span class="o">=</span> <span class="n">billiard_stadium</span><span class="p">()</span>
@@ -1058,26 +1058,26 @@
 
 
 <div class="codehilite"><pre><span></span><span class="mi">1000</span><span class="o">-</span><span class="n">element</span> <span class="nb">Array</span><span class="err">{</span><span class="n">Float64</span><span class="p">,</span><span class="mi">1</span><span class="err">}</span><span class="p">:</span>
- <span class="mi">1</span><span class="p">.</span><span class="mi">0853164204131296</span>
- <span class="mi">1</span><span class="p">.</span><span class="mi">0948481224904483</span>
- <span class="mi">1</span><span class="p">.</span><span class="mi">082820624746372</span> 
- <span class="mi">1</span><span class="p">.</span><span class="mi">0709226321310126</span>
- <span class="mi">1</span><span class="p">.</span><span class="mi">084238691322871</span> 
- <span class="mi">1</span><span class="p">.</span><span class="mi">1012464254253596</span>
- <span class="mi">1</span><span class="p">.</span><span class="mi">0857146784906961</span>
- <span class="mi">1</span><span class="p">.</span><span class="mi">0861397162561193</span>
- <span class="mi">1</span><span class="p">.</span><span class="mi">0902127557123402</span>
- <span class="mi">1</span><span class="p">.</span><span class="mi">0790542443209272</span>
+ <span class="mi">1</span><span class="p">.</span><span class="mi">0584538652673232</span>
+ <span class="mi">1</span><span class="p">.</span><span class="mi">0703986186299193</span>
+ <span class="mi">1</span><span class="p">.</span><span class="mi">0683616306064192</span>
+ <span class="mi">1</span><span class="p">.</span><span class="mi">0637311237947684</span>
+ <span class="mi">1</span><span class="p">.</span><span class="mi">1286736601425913</span>
+ <span class="mi">1</span><span class="p">.</span><span class="mi">1061380090536275</span>
+ <span class="mi">1</span><span class="p">.</span><span class="mi">1068083373668416</span>
+ <span class="mi">1</span><span class="p">.</span><span class="mi">122470545551367</span> 
+ <span class="mi">1</span><span class="p">.</span><span class="mi">0790917913035112</span>
+ <span class="mi">1</span><span class="p">.</span><span class="mi">1040450325955313</span>
  <span class="err">⋮</span>                 
- <span class="mi">1</span><span class="p">.</span><span class="mi">093017169915649</span> 
- <span class="mi">1</span><span class="p">.</span><span class="mi">0495650564392343</span>
- <span class="mi">1</span><span class="p">.</span><span class="mi">1288632185396956</span>
- <span class="mi">1</span><span class="p">.</span><span class="mi">1071757912608065</span>
- <span class="mi">1</span><span class="p">.</span><span class="mi">1071313955333115</span>
- <span class="mi">1</span><span class="p">.</span><span class="mi">1090881026774289</span>
- <span class="mi">1</span><span class="p">.</span><span class="mi">0447387501285157</span>
- <span class="mi">1</span><span class="p">.</span><span class="mi">0675346399662546</span>
- <span class="mi">1</span><span class="p">.</span><span class="mi">0940773321721804</span>
+ <span class="mi">1</span><span class="p">.</span><span class="mi">0809689636097266</span>
+ <span class="mi">1</span><span class="p">.</span><span class="mi">0900696569272939</span>
+ <span class="mi">1</span><span class="p">.</span><span class="mi">0578703204005666</span>
+ <span class="mi">1</span><span class="p">.</span><span class="mi">1001647079187808</span>
+ <span class="mi">1</span><span class="p">.</span><span class="mi">0661036357044096</span>
+ <span class="mi">1</span><span class="p">.</span><span class="mi">0702865703784035</span>
+ <span class="mi">1</span><span class="p">.</span><span class="mi">1068866043901302</span>
+ <span class="mi">1</span><span class="p">.</span><span class="mi">0885940820639386</span>
+ <span class="mi">1</span><span class="p">.</span><span class="mi">1227275328172601</span>
 </pre></div>
 
 
@@ -1086,26 +1086,26 @@
 
 
 <div class="codehilite"><pre><span></span><span class="mi">1000</span><span class="o">-</span><span class="n">element</span> <span class="nb">Array</span><span class="err">{</span><span class="n">Float64</span><span class="p">,</span><span class="mi">1</span><span class="err">}</span><span class="p">:</span>
- <span class="mi">0</span><span class="p">.</span><span class="mi">8833531851537284</span>
- <span class="mi">0</span><span class="p">.</span><span class="mi">9026362081565732</span>
- <span class="mi">0</span><span class="p">.</span><span class="mi">8779164497542645</span>
- <span class="mi">0</span><span class="p">.</span><span class="mi">7681600459602856</span>
- <span class="mi">0</span><span class="p">.</span><span class="mi">8696335125107773</span>
- <span class="mi">0</span><span class="p">.</span><span class="mi">9106173420307049</span>
- <span class="mi">0</span><span class="p">.</span><span class="mi">8793238247021111</span>
- <span class="mi">0</span><span class="p">.</span><span class="mi">8406905545497715</span>
- <span class="mi">0</span><span class="p">.</span><span class="mi">8505619716470362</span>
- <span class="mi">0</span><span class="p">.</span><span class="mi">9017112321891314</span>
+ <span class="mi">0</span><span class="p">.</span><span class="mi">9419590133810007</span>
+ <span class="mi">0</span><span class="p">.</span><span class="mi">7561077098908786</span>
+ <span class="mi">0</span><span class="p">.</span><span class="mi">8729386100291099</span>
+ <span class="mi">0</span><span class="p">.</span><span class="mi">9127914803854366</span>
+ <span class="mi">0</span><span class="p">.</span><span class="mi">8064939867879619</span>
+ <span class="mi">0</span><span class="p">.</span><span class="mi">8599613241353309</span>
+ <span class="mi">0</span><span class="p">.</span><span class="mi">8522296955503236</span>
+ <span class="mi">0</span><span class="p">.</span><span class="mi">856358231066394</span> 
+ <span class="mi">0</span><span class="p">.</span><span class="mi">7533057360702202</span>
+ <span class="mi">0</span><span class="p">.</span><span class="mi">9077527564122024</span>
  <span class="err">⋮</span>                 
- <span class="mi">0</span><span class="p">.</span><span class="mi">8893754304122427</span>
- <span class="mi">0</span><span class="p">.</span><span class="mi">8208298350566492</span>
- <span class="mi">0</span><span class="p">.</span><span class="mi">8095893551948593</span>
- <span class="mi">0</span><span class="p">.</span><span class="mi">9104306979076747</span>
- <span class="mi">0</span><span class="p">.</span><span class="mi">8589216413484585</span>
- <span class="mi">0</span><span class="p">.</span><span class="mi">8900565928524337</span>
- <span class="mi">0</span><span class="p">.</span><span class="mi">7986855073036222</span>
- <span class="mi">0</span><span class="p">.</span><span class="mi">8528308874922679</span>
- <span class="mi">0</span><span class="p">.</span><span class="mi">8896470086582222</span>
+ <span class="mi">0</span><span class="p">.</span><span class="mi">8744138042683111</span>
+ <span class="mi">0</span><span class="p">.</span><span class="mi">8378534320793374</span>
+ <span class="mi">0</span><span class="p">.</span><span class="mi">8693122398486604</span>
+ <span class="mi">0</span><span class="p">.</span><span class="mi">8286017139299405</span>
+ <span class="mi">0</span><span class="p">.</span><span class="mi">9188809445234478</span>
+ <span class="mi">0</span><span class="p">.</span><span class="mi">8884996242924483</span>
+ <span class="mi">0</span><span class="p">.</span><span class="mi">9079331804264447</span>
+ <span class="mi">0</span><span class="p">.</span><span class="mi">8023177635087974</span>
+ <span class="mi">0</span><span class="p">.</span><span class="mi">8980961245151903</span>
 </pre></div>
 
 
@@ -1130,7 +1130,7 @@
 
 
 <p>Ray-splitting version of <code>bounce!</code>.</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/b370c6dfd47511693ee2e32178e6218c1527d022/src/timeevolution/propagation.jl#L9-L25' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/210dbadea43ec4e5a2890b6b2567a8d04346c78c/src/timeevolution/propagation.jl#L9-L25' class='documenter-source'>source</a><br></p>
 <hr />
 <p><code>bounce!</code> is the function used internally by all high-level functions, like <a href="./#DynamicalBilliards.evolve!"><code>evolve!</code></a>, <a href="../phasespaces/#DynamicalBilliards.boundarymap"><code>boundarymap</code></a>, <a href="./#DynamicalBilliards.escapetime"><code>escapetime</code></a>, etc.</p>
 <p>This is the function a user should use if they want to calculate other things besides what is already available in the high level API.</p>
@@ -1154,7 +1154,7 @@
 <li>"random" : The velocity is randomized upon collision.</li>
 <li>"ray-splitting" : All obstacles in the billiard allow for ray-splitting.</li>
 </ul>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/b370c6dfd47511693ee2e32178e6218c1527d022/src/billiards/standard_billiards.jl#L10-L20' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/210dbadea43ec4e5a2890b6b2567a8d04346c78c/src/billiards/standard_billiards.jl#L10-L20' class='documenter-source'>source</a><br></p>
 <p><a id='DynamicalBilliards.billiard_sinai' href='#DynamicalBilliards.billiard_sinai'>#</a>
 <strong><code>DynamicalBilliards.billiard_sinai</code></strong> &mdash; <em>Function</em>.</p>
 <div class="codehilite"><pre><span></span><span class="n">billiard_sinai</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.0</span><span class="p">;</span> <span class="n">setting</span> <span class="o">=</span> <span class="s">&quot;standard&quot;</span><span class="p">)</span>
@@ -1170,7 +1170,7 @@
 <li>"random" : The velocity is randomized upon collision.</li>
 <li>"ray-splitting" : All obstacles in the billiard allow for ray-splitting.</li>
 </ul>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/b370c6dfd47511693ee2e32178e6218c1527d022/src/billiards/standard_billiards.jl#L69-L82' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/210dbadea43ec4e5a2890b6b2567a8d04346c78c/src/billiards/standard_billiards.jl#L69-L82' class='documenter-source'>source</a><br></p>
 <p><a id='DynamicalBilliards.billiard_bunimovich' href='#DynamicalBilliards.billiard_bunimovich'>#</a>
 <strong><code>DynamicalBilliards.billiard_bunimovich</code></strong> &mdash; <em>Function</em>.</p>
 <div class="codehilite"><pre><span></span><span class="n">billiard_bunimovich</span><span class="p">(</span><span class="n">l</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">w</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
@@ -1179,7 +1179,7 @@
 
 <p>Return a vector of <code>Obstacle</code>s that define a Buminovich billiard, also called a stadium. The length is considered <em>without</em> the attached semicircles, meaning that the full length of the billiard is <code>l + w</code>. The left and right edges of the stadium are <a href="../../tutorials/billiard_table/#DynamicalBilliards.Semicircle"><code>Semicircle</code></a>s.</p>
 <p><code>billiard_stadium</code> is an alias of <code>billiard_bunimovich</code>.</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/b370c6dfd47511693ee2e32178e6218c1527d022/src/billiards/standard_billiards.jl#L256-L264' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/210dbadea43ec4e5a2890b6b2567a8d04346c78c/src/billiards/standard_billiards.jl#L256-L264' class='documenter-source'>source</a><br></p>
 <p><a id='DynamicalBilliards.billiard_mushroom' href='#DynamicalBilliards.billiard_mushroom'>#</a>
 <strong><code>DynamicalBilliards.billiard_mushroom</code></strong> &mdash; <em>Function</em>.</p>
 <div class="codehilite"><pre><span></span><span class="n">billiard_mushroom</span><span class="p">(</span><span class="n">sl</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span> <span class="n">sw</span> <span class="o">=</span> <span class="mf">0.2</span><span class="p">,</span> <span class="n">cr</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span> <span class="n">sloc</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">;</span> <span class="n">door</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span>
@@ -1188,7 +1188,7 @@
 
 <p>Create a mushroom billiard with stem length <code>sl</code>, stem width <code>sw</code> and cap radius <code>cr</code>. The center of the cap (which is Semicircle) is always at <code>[0, sl]</code>. The center of the stem is located at <code>sloc</code>.</p>
 <p>Optionally, the bottom-most <code>Wall</code> is a <code>Door</code> (see <a href="./#DynamicalBilliards.escapetime"><code>escapetime</code></a>).</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/b370c6dfd47511693ee2e32178e6218c1527d022/src/billiards/standard_billiards.jl#L219-L226' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/210dbadea43ec4e5a2890b6b2567a8d04346c78c/src/billiards/standard_billiards.jl#L219-L226' class='documenter-source'>source</a><br></p>
 <p><a id='DynamicalBilliards.billiard_polygon' href='#DynamicalBilliards.billiard_polygon'>#</a>
 <strong><code>DynamicalBilliards.billiard_polygon</code></strong> &mdash; <em>Function</em>.</p>
 <div class="codehilite"><pre><span></span><span class="n">billiard_polygon</span><span class="p">(</span><span class="n">n</span><span class="o">::</span><span class="kt">Int</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="n">center</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">];</span> <span class="n">setting</span> <span class="o">=</span> <span class="s">&quot;standard&quot;</span><span class="p">)</span>
@@ -1203,7 +1203,7 @@
 <li>"periodic" : The walls are <code>PeriodicWall</code> type, enforcing periodicity at the boundaries. Only available for <code>n=4</code> or <code>n=6</code>.</li>
 <li>"random" : The velocity is randomized upon collision.</li>
 </ul>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/b370c6dfd47511693ee2e32178e6218c1527d022/src/billiards/standard_billiards.jl#L112-L124' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/210dbadea43ec4e5a2890b6b2567a8d04346c78c/src/billiards/standard_billiards.jl#L112-L124' class='documenter-source'>source</a><br></p>
 <p><a id='DynamicalBilliards.billiard_hexagonal_sinai' href='#DynamicalBilliards.billiard_hexagonal_sinai'>#</a>
 <strong><code>DynamicalBilliards.billiard_hexagonal_sinai</code></strong> &mdash; <em>Function</em>.</p>
 <div class="codehilite"><pre><span></span><span class="n">billiard_hexagonal_sinai</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="n">center</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">];</span> <span class="n">setting</span> <span class="o">=</span> <span class="s">&quot;standard&quot;</span><span class="p">)</span>
@@ -1211,7 +1211,7 @@
 
 
 <p>Create a sinai-like billiard, which is a hexagon of outer radius <code>R</code>, containing at its center (given by <code>center</code>) a disk of radius <code>r</code>. The <code>setting</code> keyword is passed to <code>billiard_polygon</code>.</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/b370c6dfd47511693ee2e32178e6218c1527d022/src/billiards/standard_billiards.jl#L164-L169' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/210dbadea43ec4e5a2890b6b2567a8d04346c78c/src/billiards/standard_billiards.jl#L164-L169' class='documenter-source'>source</a><br></p>
 <p><a id='DynamicalBilliards.billiard_raysplitting_showcase' href='#DynamicalBilliards.billiard_raysplitting_showcase'>#</a>
 <strong><code>DynamicalBilliards.billiard_raysplitting_showcase</code></strong> &mdash; <em>Function</em>.</p>
 <div class="codehilite"><pre><span></span><span class="n">billiard_raysplitting_showcase</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">2.0</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">r1</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">r2</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">bd</span><span class="p">,</span> <span class="n">rayspl</span>
@@ -1220,7 +1220,7 @@
 
 <p>Showcase example billiard for ray-splitting processes. A rectangle <code>(x,y)</code> with a SplitterWall at <code>x/2</code> and two disks at each side, with respective radii <code>r1</code>, <code>r2</code>.</p>
 <p><strong>Notice</strong>: This function returns a billiard <code>bd</code> as well as a <code>rayspl</code> dictionary!</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/b370c6dfd47511693ee2e32178e6218c1527d022/src/billiards/standard_billiards.jl#L182-L189' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/210dbadea43ec4e5a2890b6b2567a8d04346c78c/src/billiards/standard_billiards.jl#L182-L189' class='documenter-source'>source</a><br></p>
 <p><a id='DynamicalBilliards.billiard_logo' href='#DynamicalBilliards.billiard_logo'>#</a>
 <strong><code>DynamicalBilliards.billiard_logo</code></strong> &mdash; <em>Function</em>.</p>
 <div class="codehilite"><pre><span></span><span class="n">billiard_logo</span><span class="p">(;</span><span class="n">h</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">α</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="mf">0.18</span><span class="p">,</span> <span class="n">off</span><span class="o">=</span><span class="mf">0.25</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">bd</span><span class="p">,</span> <span class="n">ray</span>
@@ -1228,7 +1228,7 @@
 
 
 <p>Create the billiard used as logo of <code>DynamicalBilliards</code> and return it along with the tuple of raysplitters.</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/b370c6dfd47511693ee2e32178e6218c1527d022/src/billiards/standard_billiards.jl#L279-L283' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/210dbadea43ec4e5a2890b6b2567a8d04346c78c/src/billiards/standard_billiards.jl#L279-L283' class='documenter-source'>source</a><br></p>
 <p><a id='DynamicalBilliards.billiard_iris' href='#DynamicalBilliards.billiard_iris'>#</a>
 <strong><code>DynamicalBilliards.billiard_iris</code></strong> &mdash; <em>Function</em>.</p>
 <div class="codehilite"><pre><span></span><span class="n">billiard_iris</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mf">0.4</span><span class="p">,</span> <span class="n">w</span><span class="o">=</span><span class="mf">1.0</span><span class="p">;</span> <span class="n">setting</span> <span class="o">=</span> <span class="s">&quot;standard&quot;</span><span class="p">)</span>
@@ -1236,7 +1236,7 @@
 
 
 <p>Return a billiard that is a square of side <code>w</code> enclosing at its center an ellipse with semi axes <code>a</code>, <code>b</code>.</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/b370c6dfd47511693ee2e32178e6218c1527d022/src/billiards/standard_billiards.jl#L343-L347' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/210dbadea43ec4e5a2890b6b2567a8d04346c78c/src/billiards/standard_billiards.jl#L343-L347' class='documenter-source'>source</a><br></p>
 <p><a id='Particle-types-1'></a></p>
 <h2 id="particle-types">Particle types</h2>
 <p><a id='DynamicalBilliards.Particle' href='#DynamicalBilliards.Particle'>#</a>
@@ -1249,7 +1249,7 @@
 
 <p>Create a particle with initial conditions <code>x0, y0, φ0</code>. It propagates as a straight line.</p>
 <p>The field <code>current_cell</code> shows at which cell of a periodic billiard is the particle currently located.</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/b370c6dfd47511693ee2e32178e6218c1527d022/src/billiards/particles.jl#L13-L24' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/210dbadea43ec4e5a2890b6b2567a8d04346c78c/src/billiards/particles.jl#L13-L24' class='documenter-source'>source</a><br></p>
 <p><a id='DynamicalBilliards.MagneticParticle' href='#DynamicalBilliards.MagneticParticle'>#</a>
 <strong><code>DynamicalBilliards.MagneticParticle</code></strong> &mdash; <em>Type</em>.</p>
 <div class="codehilite"><pre><span></span><span class="n">MagneticParticle</span><span class="p">(</span><span class="n">ic</span><span class="o">::</span><span class="kt">AbstractVector</span><span class="p">{</span><span class="n">T</span><span class="p">},</span> <span class="n">ω</span><span class="o">::</span><span class="kt">Real</span><span class="p">)</span> <span class="c"># where ic = [x0, y0, φ0]</span>
@@ -1261,7 +1261,7 @@
 
 <p>Create a <em>magnetic</em> particle with initial conditions <code>x0, y0, φ0</code> and angular velocity <code>ω</code>. It propagates as a circle instead of a line, with radius <code>1/abs(ω)</code>.</p>
 <p>The field <code>current_cell</code> shows at which cell of a periodic billiard is the particle currently located.</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/b370c6dfd47511693ee2e32178e6218c1527d022/src/billiards/particles.jl#L56-L69' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/210dbadea43ec4e5a2890b6b2567a8d04346c78c/src/billiards/particles.jl#L56-L69' class='documenter-source'>source</a><br></p>
                 
                   
                 
