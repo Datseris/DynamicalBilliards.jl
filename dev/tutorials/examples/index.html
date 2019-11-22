@@ -443,6 +443,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#star-billiard" title="Star billiard" class="md-nav__link">
+    Star billiard
+  </a>
+  
+</li>
+      
       
       
       
@@ -494,6 +501,13 @@
         <li class="md-nav__item">
   <a href="#semi-periodic-billiard" title="Semi-Periodic Billiard" class="md-nav__link">
     Semi-Periodic Billiard
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#star-billiard" title="Star billiard" class="md-nav__link">
+    Star billiard
   </a>
   
 </li>
@@ -596,7 +610,7 @@
 </pre></div>
 
 
-<div class="codehilite"><pre><span></span><span class="mi">2</span><span class="p">.</span><span class="mi">183561958513646</span>
+<div class="codehilite"><pre><span></span><span class="mi">2</span><span class="p">.</span><span class="mi">189391873296541</span>
 </pre></div>
 
 
@@ -637,6 +651,24 @@
 
 
 <p><img alt="" src="../xperiodic.svg" /></p>
+<p><a id='Star-billiard-1'></a></p>
+<h2 id="star-billiard">Star billiard</h2>
+<div class="codehilite"><pre><span></span><span class="k">using</span> <span class="n">DynamicalBilliards</span><span class="p">,</span> <span class="n">PyPlot</span>
+<span class="n">v</span> <span class="o">=</span> <span class="n">DynamicalBilliards</span><span class="o">.</span><span class="n">polygon_vertices</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">v2</span> <span class="o">=</span> <span class="n">DynamicalBilliards</span><span class="o">.</span><span class="n">polygon_vertices</span><span class="p">(</span><span class="mf">0.25</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="nb">π</span><span class="o">/</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">vstar</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="kp">in</span> <span class="mi">1</span><span class="o">:</span><span class="mi">5</span>
+    <span class="n">push!</span><span class="p">(</span><span class="n">vstar</span><span class="p">,</span> <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">v2</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+<span class="k">end</span>
+<span class="n">bd</span> <span class="o">=</span> <span class="n">billiard_vertices</span><span class="p">(</span><span class="n">vstar</span><span class="p">)</span>
+
+<span class="n">plot</span><span class="p">(</span><span class="n">bd</span><span class="p">)</span>
+<span class="n">xt</span><span class="p">,</span> <span class="n">yt</span> <span class="o">=</span> <span class="n">timeseries</span><span class="p">(</span><span class="n">randominside</span><span class="p">(</span><span class="n">bd</span><span class="p">),</span> <span class="n">bd</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">xt</span><span class="p">,</span> <span class="n">yt</span><span class="p">)</span>
+</pre></div>
+
+
+<p><img alt="" src="../star.svg" /></p>
                 
                   
                 
