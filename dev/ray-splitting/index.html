@@ -595,14 +595,14 @@
 </pre></div>
 
 
-<div class="codehilite"><pre><span></span><span class="n">Billiard</span><span class="err">{</span><span class="n">Float64</span><span class="err">}</span> <span class="k">with</span> <span class="mi">7</span> <span class="n">obstacles</span><span class="p">:</span>
-  <span class="k">Left</span> <span class="n">Antidot</span>
-  <span class="k">Right</span> <span class="n">Antidot</span>
-  <span class="n">Splitter</span> <span class="n">wall</span>
-  <span class="n">Bottom</span> <span class="n">wall</span>
-  <span class="k">Right</span> <span class="n">wall</span>
-  <span class="n">Top</span> <span class="n">wall</span>
-  <span class="k">Left</span> <span class="n">wall</span>
+<div class="codehilite"><pre><span></span><span class="err">Billiard{Float64} with 7 obstacles:</span>
+<span class="err">  Left Antidot</span>
+<span class="err">  Right Antidot</span>
+<span class="err">  Splitter wall</span>
+<span class="err">  Bottom wall</span>
+<span class="err">  Right wall</span>
+<span class="err">  Top wall</span>
+<span class="err">  Left wall</span>
 </pre></div>
 
 
@@ -632,7 +632,7 @@
 </ol>
 <p>The above three functions use the <strong>same convention</strong>: the argument <code>pflag</code> is the one the obstacle has <strong>before transmission</strong>. For example, if a particle is outside an <a href="../tutorials/billiard_table/#DynamicalBilliards.Antidot"><code>Antidot</code></a> (with <code>pflag = true</code> here) and is transmitted inside the <code>Antidot</code> (<code>pflag</code> becomes <code>false</code> here), then all three functions will be given their second argument (the Boolean one) as <code>true</code>!</p>
 <p><code>affect</code> is a function, and denotes which obstacles of the billiard are affected when transmission occurs at obstacle <code>i</code> (for which obstacles should the field <code>pflag</code> be reversed). Defaults to <code>idxs = (i) -&gt; i</code>, i.e. only the colliding obstacle is affected. If you want many obstacles to be affected you could write <code>idxs = (i) -&gt; SVector(2,3,5)</code>, etc. Keep in mind that the only values of <code>i</code> that can be passed into this function are the ones that are given in the argument <code>idxs</code>!</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/b40f371fd987bb6c0777f7eef0c47245da5b12f5/src/raysplitting.jl#L8-L38' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/ca074348cb634e9ddf7cc1195bfd732b860f48ce/src/raysplitting.jl#L8-L38' class='documenter-source'>source</a><br></p>
 <hr />
 <p>If you want different type of transmission/refraction functions for different obstacles, then you define multiple <code>RaySplitter</code>s.</p>
 <p>Continuing from the above billiard, let's also create some <code>RaySplitter</code> instances for it.</p>
@@ -641,7 +641,7 @@
 </pre></div>
 
 
-<div class="codehilite"><pre><span></span><span class="n">refraction</span> <span class="p">(</span><span class="n">generic</span> <span class="k">function</span> <span class="k">with</span> <span class="mi">1</span> <span class="k">method</span><span class="p">)</span>
+<div class="codehilite"><pre><span></span><span class="err">refraction (generic function with 1 method)</span>
 </pre></div>
 
 
@@ -656,7 +656,7 @@
 </pre></div>
 
 
-<div class="codehilite"><pre><span></span><span class="n">transmission_p</span> <span class="p">(</span><span class="n">generic</span> <span class="k">function</span> <span class="k">with</span> <span class="mi">1</span> <span class="k">method</span><span class="p">)</span>
+<div class="codehilite"><pre><span></span><span class="err">transmission_p (generic function with 1 method)</span>
 </pre></div>
 
 
@@ -667,7 +667,7 @@
 </pre></div>
 
 
-<div class="codehilite"><pre><span></span><span class="n">newowall</span> <span class="p">(</span><span class="n">generic</span> <span class="k">function</span> <span class="k">with</span> <span class="mi">1</span> <span class="k">method</span><span class="p">)</span>
+<div class="codehilite"><pre><span></span><span class="err">newowall (generic function with 1 method)</span>
 </pre></div>
 
 
@@ -677,11 +677,11 @@
 </pre></div>
 
 
-<div class="codehilite"><pre><span></span><span class="nv">RaySplitter</span> <span class="k">for</span> <span class="nv">indices</span> [<span class="mi">1</span>, <span class="mi">2</span>]
- <span class="nv">transmission</span>: <span class="sc">#1</span>
- <span class="nv">refraction</span>:   <span class="nv">refraction</span>
- <span class="nv">new</span> <span class="nv">angular</span>:  <span class="nv">newoantidot</span>
- <span class="nv">affect</span>:       <span class="nv">default</span>
+<div class="codehilite"><pre><span></span><span class="err">RaySplitter for indices [1, 2]</span>
+<span class="err"> transmission: #1</span>
+<span class="err"> refraction:   refraction</span>
+<span class="err"> new angular:  newoantidot</span>
+<span class="err"> affect:       default</span>
 </pre></div>
 
 
@@ -696,15 +696,6 @@
 <span class="n">plot</span><span class="p">(</span><span class="n">bd</span><span class="p">)</span>
 <span class="n">plot</span><span class="p">(</span><span class="n">xt</span><span class="p">,</span> <span class="n">yt</span><span class="p">)</span>
 <span class="n">scatter</span><span class="p">(</span><span class="n">xt</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">yt</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">color</span> <span class="o">=</span> <span class="s">&quot;black&quot;</span><span class="p">)</span>
-</pre></div>
-
-
-<div class="codehilite"><pre><span></span><span class="err">┌</span><span class="w"> </span><span class="nl">Warning</span><span class="p">:</span><span class="w"> </span><span class="err">`</span><span class="nl">a</span><span class="p">:</span><span class="err">:</span><span class="n">StaticArray</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nl">b</span><span class="p">:</span><span class="err">:</span><span class="n">Number</span><span class="err">`</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">deprecated</span><span class="p">,</span><span class="w"> </span><span class="k">use</span><span class="w"> </span><span class="err">`</span><span class="n">a</span><span class="w"> </span><span class="p">.</span><span class="o">-</span><span class="w"> </span><span class="n">b</span><span class="err">`</span><span class="w"> </span><span class="n">instead</span><span class="p">.</span><span class="w"></span>
-<span class="err">│</span><span class="w">   </span><span class="n">caller</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cellsize</span><span class="w"> </span><span class="k">at</span><span class="w"> </span><span class="n">obstacles</span><span class="p">.</span><span class="nl">jl</span><span class="p">:</span><span class="mi">546</span><span class="w"> </span><span class="o">[</span><span class="n">inlined</span><span class="o">]</span><span class="w"></span>
-<span class="err">└</span><span class="w"> </span><span class="err">@</span><span class="w"> </span><span class="n">Core</span><span class="w"> </span><span class="o">~/</span><span class="n">build</span><span class="o">/</span><span class="n">JuliaDynamics</span><span class="o">/</span><span class="n">DynamicalBilliards</span><span class="p">.</span><span class="n">jl</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">billiards</span><span class="o">/</span><span class="n">obstacles</span><span class="p">.</span><span class="nl">jl</span><span class="p">:</span><span class="mi">546</span><span class="w"></span>
-<span class="err">┌</span><span class="w"> </span><span class="nl">Warning</span><span class="p">:</span><span class="w"> </span><span class="err">`</span><span class="nl">a</span><span class="p">:</span><span class="err">:</span><span class="n">StaticArray</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nl">b</span><span class="p">:</span><span class="err">:</span><span class="n">Number</span><span class="err">`</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">deprecated</span><span class="p">,</span><span class="w"> </span><span class="k">use</span><span class="w"> </span><span class="err">`</span><span class="n">a</span><span class="w"> </span><span class="p">.</span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="err">`</span><span class="w"> </span><span class="n">instead</span><span class="p">.</span><span class="w"></span>
-<span class="err">│</span><span class="w">   </span><span class="n">caller</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cellsize</span><span class="w"> </span><span class="k">at</span><span class="w"> </span><span class="n">obstacles</span><span class="p">.</span><span class="nl">jl</span><span class="p">:</span><span class="mi">547</span><span class="w"> </span><span class="o">[</span><span class="n">inlined</span><span class="o">]</span><span class="w"></span>
-<span class="err">└</span><span class="w"> </span><span class="err">@</span><span class="w"> </span><span class="n">Core</span><span class="w"> </span><span class="o">~/</span><span class="n">build</span><span class="o">/</span><span class="n">JuliaDynamics</span><span class="o">/</span><span class="n">DynamicalBilliards</span><span class="p">.</span><span class="n">jl</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">billiards</span><span class="o">/</span><span class="n">obstacles</span><span class="p">.</span><span class="nl">jl</span><span class="p">:</span><span class="mi">547</span><span class="w"></span>
 </pre></div>
 
 
@@ -759,7 +750,7 @@
 <li>Ray reversal is true: θ(θ(φ, pflag, ω), !pflag, ω) ≈ φ</li>
 <li>Magnetic conservation is true: (ω<em>new(ω</em>new(ω, pflag), !pflag) ≈ ω</li>
 </ul>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/b40f371fd987bb6c0777f7eef0c47245da5b12f5/src/raysplitting.jl#L327-L339' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/ca074348cb634e9ddf7cc1195bfd732b860f48ce/src/raysplitting.jl#L327-L339' class='documenter-source'>source</a><br></p>
 <p><a id='Snell's-Law-1'></a></p>
 <h2 id="snells-law">Snell's Law</h2>
 <p>In classical geometric optics, the refraction of a ray of light moving from one medium to another is described by Snell's law. For an angle of incidence of <span><span class="MathJax_Preview">\phi</span><script type="math/tex">\phi</script></span>, the refraction angle <span><span class="MathJax_Preview">\theta</span><script type="math/tex">\theta</script></span> is determined by the equation</p>
@@ -781,7 +772,7 @@
 
 <p>Create transmission and refraction functions <code>t, r</code> that follow Snell's law, i.e. the transmission probability is set to 1.0 except for the case of total internal reflection. </p>
 <p><code>n1</code> is the index of refraction for the <code>pflag = false</code> side of an obstacle, while <code>n2</code> is the index of refraction for <code>pflag = true</code>.</p>
-<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/b40f371fd987bb6c0777f7eef0c47245da5b12f5/src/raysplitting.jl#L400-L409' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/JuliaDynamics/DynamicalBilliards.jl/blob/ca074348cb634e9ddf7cc1195bfd732b860f48ce/src/raysplitting.jl#L400-L409' class='documenter-source'>source</a><br></p>
 <p>Using the functions returned by <code>law_of_refraction</code>, we can set up a <code>RaySplitter</code> for a billiard.</p>
 <div class="codehilite"><pre><span></span><span class="k">using</span> <span class="n">DynamicalBilliards</span><span class="p">,</span> <span class="n">PyPlot</span>
 <span class="c"># Create a circular &quot;lens&quot;</span>
@@ -794,7 +785,7 @@
 </pre></div>
 
 
-<div class="codehilite"><pre><span></span><span class="ss">(</span><span class="nv">RaySplitter</span> <span class="k">for</span> <span class="nv">indices</span> [<span class="mi">5</span>],<span class="ss">)</span>
+<div class="codehilite"><pre><span></span><span class="err">(RaySplitter for indices [5],)</span>
 </pre></div>
 
 
@@ -821,7 +812,7 @@
 </pre></div>
 
 
-<div class="codehilite"><pre><span></span><span class="n">neww</span> <span class="p">(</span><span class="n">generic</span> <span class="k">function</span> <span class="k">with</span> <span class="mi">1</span> <span class="k">method</span><span class="p">)</span>
+<div class="codehilite"><pre><span></span><span class="err">neww (generic function with 1 method)</span>
 </pre></div>
 
 
@@ -830,11 +821,11 @@
 </pre></div>
 
 
-<div class="codehilite"><pre><span></span><span class="nv">RaySplitter</span> <span class="k">for</span> <span class="nv">indices</span> [<span class="mi">1</span>, <span class="mi">2</span>, <span class="mi">3</span>, <span class="mi">4</span>]
- <span class="nv">transmission</span>: <span class="nv">trans</span>
- <span class="nv">refraction</span>:   <span class="nv">refra</span>
- <span class="nv">new</span> <span class="nv">angular</span>:  <span class="nv">neww</span>
- <span class="nv">affect</span>:       <span class="sc">#3</span>
+<div class="codehilite"><pre><span></span><span class="err">RaySplitter for indices [1, 2, 3, 4]</span>
+<span class="err"> transmission: trans</span>
+<span class="err"> refraction:   refra</span>
+<span class="err"> new angular:  neww</span>
+<span class="err"> affect:       #3</span>
 </pre></div>
 
 
@@ -844,10 +835,10 @@
 </pre></div>
 
 
-<div class="codehilite"><pre><span></span><span class="n">MagneticParticle</span><span class="err">{</span><span class="n">Float64</span><span class="err">}</span>
-<span class="k">position</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">6</span><span class="p">]</span>
-<span class="n">velocity</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">.</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">ang</span><span class="p">.</span> <span class="n">velocity</span><span class="p">:</span> <span class="mi">0</span><span class="p">.</span><span class="mi">4</span>
+<div class="codehilite"><pre><span></span><span class="err">MagneticParticle{Float64}</span>
+<span class="c">position: [0.4, 0.6]</span>
+<span class="c">velocity: [1.0, 0.0]</span>
+<span class="err">ang. velocity: 0.4</span>
 </pre></div>
 
 
