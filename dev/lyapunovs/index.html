@@ -10,10 +10,10 @@ par = randominside(bd)
 t = 1000.0
 
 exps = lyapunovspectrum(par, bd, t)</code></pre><pre><code class="language-none">4-element Array{Float64,1}:
-  0.628279735343909
-  0.00203915782259342
- -8.463771355305765e-6
- -0.6303104293951466</code></pre><p>In the following example we compute the change of <span>$\lambda_1\$</span> versus the distance between the disks in a hexagonal periodic billiard.</p><pre><code class="language-julia">using DynamicalBilliards
+  0.6862227890277887
+  0.00019499465248041498
+ -0.0005649059944275794
+ -0.6858528776858412</code></pre><p>In the following example we compute the change of <span>$\lambda_1\$</span> versus the distance between the disks in a hexagonal periodic billiard.</p><pre><code class="language-julia">using DynamicalBilliards
 using PyPlot
 
 t = 5000.0
@@ -44,4 +44,4 @@ ts, Rs, is = perturbationgrowth(Particle(0.1, 0.1, 0.1), bd, 10.0)
 figure()
 plot(ts, log.(norm.(Δ)), &quot;k-&quot;, lw = 0.5)
 scatter(ts, log.(norm.(Δ)), c = [j == 1 ? &quot;C0&quot; : &quot;C1&quot; for j in is])
-xlabel(&quot;\$t\$&quot;); ylabel(&quot;\$\\log(||\\Delta ||)\$&quot;)</code></pre><p><img src="../pertg.svg" alt/></p></article><nav class="docs-footer"><a class="docs-footer-prevpage" href="../ray-splitting/">« Ray-Splitting</a><a class="docs-footer-nextpage" href="../mushroomtools/">MushroomTools »</a></nav></div><div class="modal" id="documenter-settings"><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Settings</p><button class="delete"></button></header><section class="modal-card-body"><p><label class="label">Theme</label><div class="select"><select id="documenter-themepicker"><option value="documenter-light">documenter-light</option><option value="documenter-dark">documenter-dark</option></select></div></p><hr/><p>This document was generated with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> on <span class="colophon-date" title="Wednesday 22 April 2020 17:26">Wednesday 22 April 2020</span>. Using Julia version 1.4.1.</p></section><footer class="modal-card-foot"></footer></div></div></div></body></html>
+xlabel(&quot;\$t\$&quot;); ylabel(&quot;\$\\log(||\\Delta ||)\$&quot;)</code></pre><p><img src="../pertg.svg" alt/></p></article><nav class="docs-footer"><a class="docs-footer-prevpage" href="../ray-splitting/">« Ray-Splitting</a><a class="docs-footer-nextpage" href="../mushroomtools/">MushroomTools »</a></nav></div><div class="modal" id="documenter-settings"><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Settings</p><button class="delete"></button></header><section class="modal-card-body"><p><label class="label">Theme</label><div class="select"><select id="documenter-themepicker"><option value="documenter-light">documenter-light</option><option value="documenter-dark">documenter-dark</option></select></div></p><hr/><p>This document was generated with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> on <span class="colophon-date" title="Wednesday 22 April 2020 19:02">Wednesday 22 April 2020</span>. Using Julia version 1.4.1.</p></section><footer class="modal-card-foot"></footer></div></div></div></body></html>
